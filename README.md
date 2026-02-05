@@ -39,6 +39,10 @@ npm run dev
 
 # Process
 
+- Cleared the initial application of any pre-existing Vite demo logic & styling, pushed up and then added main branch protection in Github
+
+- #PR1 Imported all img assets from the figma design, and gave appropriate naming conventions for each file and stored them in appropriate sub folders within the assets folder.
+
 
 
 # Author
