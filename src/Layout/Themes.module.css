@@ -1,0 +1,17 @@
+.default {
+  /* --- Primitives --- */
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /* --- Colouring --- */
+  --text-gold: #B88E2F;
+
+  /* Default theme */
+
+  /* H1 */
+  --font-size-h1: 52px;
+  --line-height-h1: 65px;
+  --letter-spacing-h1: 0;
+
+}
