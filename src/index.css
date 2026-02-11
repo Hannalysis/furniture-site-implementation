@@ -11,6 +11,7 @@
   box-sizing: border-box;
   /* PH bg for ease of initial implementation */
   background: black;
+  color: whitesmoke;
 }
 
 body {

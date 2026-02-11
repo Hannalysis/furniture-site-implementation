@@ -43,6 +43,9 @@ npm run dev
 
 - #PR1 Imported all img assets from the figma design, and gave appropriate naming conventions for each file and stored them in appropriate sub folders within the assets folder.
 
+- #PR2 Initial scaffolding for components, layout and modular CSS
+
+- Installed classnames to aid Typography systems, along with @types/classnames under a dev dependency. Basic test using some placeholder h1 styling
 
 
 # Author
