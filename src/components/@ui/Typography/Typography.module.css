@@ -3,5 +3,5 @@
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-h1);
   letter-spacing: var(--letter-spacing-h1);
-  color: var(--text-gold);
+  color: var(--accent-gold);
 }
