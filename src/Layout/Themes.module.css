@@ -1,5 +1,7 @@
 .default {
   /* --- Primitives --- */
+  --font-main-poppins: "Poppins", sans-serif;
+
   --font-weight-bold: 700;
   --font-weight-medium: 500;
   --font-weight-regular: 400;

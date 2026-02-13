@@ -9,7 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* PH bg for ease of initial implementation */
+  font-family: var(--font-main-poppins);
+  /* PH styling for ease of initial implementation */
   background: black;
   color: whitesmoke;
 }
