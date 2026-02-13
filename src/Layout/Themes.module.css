@@ -4,8 +4,32 @@
   --font-weight-medium: 500;
   --font-weight-regular: 400;
 
+  /* --- Main font --- */
+  --font-main-poppins: "Poppins", sans-serif;
+  font-family: var(--font-main-poppins);
+
+  /* --- Brand Specific --- */
+  --font-furnio: "Montserrat", sans-serif;
+  --font-size-furnio: 34px;
+
   /* --- Colouring --- */
-  --text-gold: #B88E2F;
+  --bg: hsl(0,0,96);
+
+  --layout-text-colour: hsl(0,0%,0%);
+  --layout-subtext-colour: hsl(0,0%,63%);
+
+  --main-text-colour: hsl(0,0%,20%);
+  --header-inline-colour: hsl(0,0%,38%); /* Note: Except 'Browse The Range' is 40 */
+
+  --accent-gold: hsl(42,59%,45%);
+  --button-label-white: hsl(0,0%,100%);
+
+  --card-text-colour: hsl(0,0%,23%);
+  --card-inline-colour:hsl(0,0%,54%);
+  --card-rp-strikethrough: hsl(0,0%,69%);
+
+  --label-peach: hsl(0,73%,68%);
+  --label-teal: hsl(171,62%,47%);
 
   /* Default theme */
 
@@ -14,4 +38,16 @@
   --line-height-h1: 65px;
   --letter-spacing-h1: 0;
 
+  /* H2 */
+  --font-size-h2: 40px;
+  --line-height-h2: 120%;
+
+  /* H3 */
+  --font-size-h3: 32px;
+
+  /* H4 */
+  --font-size-h4: 24px;
+
+  /* H5 */
+  --font-size-h5: 20px;
 }
