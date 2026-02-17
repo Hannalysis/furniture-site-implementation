@@ -47,9 +47,11 @@ npm run dev
 
 - #PR3 Installed classnames to aid Typography systems, along with @types/classnames under a dev dependency. Basic test using some placeholder h1 styling.
 
-- Adding design token variables and font sourcing
+- #PR4 Adding design token variables and font sourcing
 
-- TODO: Add icon to site & update favicon
+- #PR5 Added icon to site & update favicon
+
+- #PR6 Code cleanup: Removing redundant styling, vite icon, and property access from themes (design token variables only)
 
 
 # Author
