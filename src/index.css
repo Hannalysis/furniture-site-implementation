@@ -3,6 +3,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Fallback properties */
+  --bg: hsl(0, 0%, 96%);
+  --font-main-poppins: "Poppins", sans-serif;
+  --layout-text-colour: hsl(0, 0%, 0%);
 }
 
 * {
@@ -17,5 +22,6 @@ html {
 
 body {
   background: var(--bg);
-  color: var(--layout-text-main);
+  color: var(--layout-text-colour);
+  font-family: var(--font-main-poppins);
 }
