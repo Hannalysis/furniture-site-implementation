@@ -1,3 +1,33 @@
 .header {
     justify-items: center;
+    color: var(--accent-gold);
 }
+
+.main, .footer, .header {
+    grid-column: 1 / -1;
+    /* Test code */
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+@media (min-width: 768px) {
+
+    .root {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 30px; 
+        box-sizing: border-box;
+    }
+
+    .contentContainer {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 clamp(16px, 8vw, 100px); 
+        /* Test code */
+        border-width: 2px;
+        border-color: red;
+        border-style: solid;
+        height: 100px;
+    }
+    }
