@@ -53,6 +53,8 @@ npm run dev
 
 - #PR6 Code cleanup: Removing redundant styling, vite icon, and property access from themes (design token variables only)
 
+- #PR7 Adding responsive grid functionality to the Layout component, and rendering a basic Home page component (with testing styling). Deployment initiated.
+
 
 # Author
 
