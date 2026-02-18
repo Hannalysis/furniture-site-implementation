@@ -18,8 +18,16 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 
 const Header = () => (
   <header className={classes.header}>
-    <Typography variant="heading1">Test H1</Typography>
+    <div className={classes.contentContainer}>
+      <Typography variant="heading1">Test H1</Typography>
+    </div>
   </header>
 );
 
-const Footer = () => <footer className={classes.footer}></footer>;
+const Footer = () => (
+  <footer className={classes.footer}>
+    <div className={classes.contentContainer}>
+      <Typography variant="body1">2023 furino. All rights reverved</Typography>
+    </div>
+  </footer>
+);
