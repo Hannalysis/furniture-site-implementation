@@ -4,7 +4,9 @@ import layoutClasses from "../../../Layout/Layout.module.css"
 
 export const Inspirations = () => (
     <div className={layoutClasses.contentContainer}>
-        <section className={classes.inspirations}>
-        </section>
+        <div className={layoutClasses.grid}>
+            <section className={classes.inspirations}>
+            </section>
+        </div>
     </div>
 );

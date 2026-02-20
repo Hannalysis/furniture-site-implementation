@@ -4,7 +4,9 @@ import layoutClasses from "../../../Layout/Layout.module.css"
 
 export const BrowseTheRange = () => (
     <div className={layoutClasses.contentContainer}>
-        <section className={classes.browseTheRange}>
-        </section>
+        <div className={layoutClasses.grid}>
+            <section className={classes.browseTheRange}>
+            </section>
+        </div>
     </div>
 );

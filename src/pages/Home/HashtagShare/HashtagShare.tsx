@@ -4,7 +4,9 @@ import layoutClasses from "../../../Layout/Layout.module.css"
 
 export const HashtagShare = () => (
     <div className={layoutClasses.contentContainer}>
-        <section className={classes.hashtagShare}>
-        </section>
+        <div className={layoutClasses.grid}>
+            <section className={classes.hashtagShare}>
+            </section>
+        </div>
     </div>
 );
