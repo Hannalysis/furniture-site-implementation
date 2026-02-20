@@ -1,16 +1,18 @@
 import classNames from "classnames";
-import type { ReactNode } from "react";
 import { Typography } from "../components/@ui/Typography/Typography";
 import classes from "./Layout.module.css";
 import themes from "./Themes.module.css";
+import { Outlet } from "react-router-dom";
 
 const theme = "default";
 
-export const Layout = ({ children }: { children: ReactNode }) => {
+export const Layout = () => {
   return (
     <div className={classNames(classes.root, themes[theme])}>
       <Header />
-      <main className={classes.main}>{children}</main>
+        <main className={classes.main}>
+          <Outlet />
+        </main>
       <Footer />
     </div>
   );

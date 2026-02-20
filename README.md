@@ -35,6 +35,7 @@ npm run dev
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=react,vite,ts,html,css,vscode&perline=8" />
   </a>
+    <h4><u>Packages:</u><br/><span style = "font-weight:lighter">classNames, react-router-dom</span></h4>
 </p>
 
 # Process
@@ -54,6 +55,10 @@ npm run dev
 - #PR6 Code cleanup: Removing redundant styling, vite icon, and property access from themes (design token variables only)
 
 - #PR7 Adding responsive grid functionality to the Layout component, and rendering a basic Home page component (with testing styling). Deployment initiated.
+
+- #PR8 Implemented React Router DOM, for scalability - for when this project goes past the initial MVP and we create other linking pages to visit.
+
+<p align = "center"><i>--- System implemented | Ready to translate the Home page from figma ---<i></p>
 
 
 # Author
