@@ -1,14 +1,26 @@
 .header {
     justify-items: center;
     color: var(--accent-gold);
+    /* PH properties for structure intent */
+    padding-block: calc(100px /2);
+}
+
+.footer {
+    padding-block: calc(86px /2);
 }
 
 .main, .footer, .header {
     grid-column: 1 / -1;
-    /* Test code */
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
+
+}
+
+.footerNav {
+    /* PH properties for structure intent */
+    padding-block: calc(312px /2);
+}
+
+.footerCopyright {
+    padding-block: calc(59px /2);
 }
 
 @media (min-width: 768px) {
@@ -24,10 +36,5 @@
         max-width: 1440px;
         margin: 0 auto;
         padding: 0 clamp(16px, 8vw, 100px); 
-        /* Test code */
-        border-width: 2px;
-        border-color: red;
-        border-style: solid;
-        height: 100px;
     }
     }

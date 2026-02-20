@@ -1,8 +1,17 @@
-
 // import { Typography } from "../../components/@ui/Typography/Typography";
-import classes from "./Home.module.css"
+
+import { Banner } from "./Banner/Banner"
+import { BrowseTheRange } from "./BrowseTheRange/BrowseTheRange";
+import { OurProducts } from "./OurProducts/OurProducts";
+import { Inspirations } from "./Inspirations/Inspirations"
+import { HashtagShare } from "./HashtagShare/HashtagShare";
 
 export const Home = () => (
-  <section className={classes.home}>
-    </section>
+  <>
+    <Banner />
+    <BrowseTheRange />
+    <OurProducts />
+    <Inspirations />
+    <HashtagShare />
+  </>
 );
