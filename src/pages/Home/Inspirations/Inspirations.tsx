@@ -3,10 +3,11 @@ import classes from "./Inspirations.module.css"
 import layoutClasses from "../../../Layout/Layout.module.css"
 
 export const Inspirations = () => (
-    <div className={layoutClasses.contentContainer}>
-        <div className={layoutClasses.grid}>
-            <section className={classes.inspirations}>
-            </section>
+    <section className={`${classes.inspirations}`}>
+        <div className= {
+            `${layoutClasses.contentContainer}
+            ${layoutClasses.grid}
+            ${classes.inspirationsContainer}`}>
         </div>
-    </div>
+    </section>
 );
