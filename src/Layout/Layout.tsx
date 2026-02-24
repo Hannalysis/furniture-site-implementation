@@ -20,17 +20,23 @@ export const Layout = () => {
 
 const Header = () => (
   <header className={classes.header}>
-    <div className={classes.contentContainer}>
-      {/* <Typography variant="heading1">Test H1</Typography> */}
+    <div className={`
+      ${classes.contentContainer}
+      ${classes.grid}
+      ${classes.headerNav}
+    `}>
     </div>
   </header>
 );
 
 const Footer = () => (
   <footer className={classes.footer}>
-    <div className={classes.contentContainer}>
-      <div className={classes.footerNav}>
-      </div>
+    <div className={`
+      ${classes.contentContainer}
+      ${classes.grid}
+      ${classes.footerContainer}
+    `}>
+      <div className={classes.footerNav}></div>
       <div className={classes.footerCopyright}>
         <Typography variant="body1">2023 furino. All rights reverved</Typography>
       </div>
