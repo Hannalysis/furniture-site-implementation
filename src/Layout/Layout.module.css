@@ -1,13 +1,14 @@
 .header {
     justify-items: center;
-    color: var(--accent-gold);
-    /* PH properties for structure intent */
-    /* padding-block: calc(100px /2); */
     width: 100%;
 }
 
 .headerNav {
     padding-block: calc(100px /2);
+}
+
+.footer {
+    width: 100%;
 }
 
 .footerNav {
@@ -35,8 +36,12 @@
     }
 
     .contentContainer {
-        max-width: 1236px;
+        max-width: 1240px;
         margin: 0 auto;
-        /* padding: 0 clamp(16px, 8vw, 100px); */
+    }
+
+    .wideContainer {
+        max-width: 1440px;
+        margin: 0 auto;
     }
     }
