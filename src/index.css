@@ -8,6 +8,9 @@
   --bg: hsl(0, 0%, 96%);
   --font-main-poppins: "Poppins", sans-serif;
   --layout-text-colour: hsl(0, 0%, 0%);
+
+  /* Global design tokens */
+  --main-gap: 56px;
 }
 
 * {
@@ -24,4 +27,14 @@ body {
   background: var(--bg);
   color: var(--layout-text-colour);
   font-family: var(--font-main-poppins);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-gap);
+}
+
+main > section {
+  width: 100%;
 }
