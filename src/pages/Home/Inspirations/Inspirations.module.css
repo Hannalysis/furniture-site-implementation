@@ -1,0 +1,9 @@
+.inspirations {
+    width: 100%;
+    background-color: hsl(32, 57%, 97%);
+}
+
+.inspirationsContainer {
+    /* PH properties for structure intent */
+    padding-block: calc(670px /2);
+}

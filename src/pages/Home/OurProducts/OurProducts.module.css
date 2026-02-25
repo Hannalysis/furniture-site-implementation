@@ -1,0 +1,6 @@
+.ourProducts {
+    grid-column: 1 / -1;
+    /* PH properties for structure intent */
+    padding-block: calc(1084px /2);
+    background-color: hsla(33, 12%, 65%, 70%);
+}
