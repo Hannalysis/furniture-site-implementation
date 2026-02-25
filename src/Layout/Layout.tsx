@@ -25,6 +25,37 @@ const Header = () => (
       ${classes.grid}
       ${classes.headerNav}
     `}>
+      <div className={classes.furnio}>
+        <a href="/">
+          <img src="/icon-furnio.svg" alt="Furnio icon" />
+          <span>Furnio</span>
+        </a>
+      </div>
+      <nav className={classes.headerPageNav} aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div className={classes.headerActions}>
+        <button aria-label="Search">
+          {/* <SearchIcon /> */}
+        </button>
+
+        <button aria-label="Profile">
+          {/* <UserIcon /> */}
+        </button>
+
+        <button aria-label="Favourites">
+          {/* <HeartIcon /> */}
+        </button>
+
+        <button aria-label="Shopping basket">
+          {/* <CartIcon /> */}
+        </button>
+      </div>
     </div>
   </header>
 );
