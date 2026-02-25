@@ -4,6 +4,13 @@ import classes from "./Layout.module.css";
 import themes from "./Themes.module.css";
 import { Outlet } from "react-router-dom";
 
+/* Header icons */
+import { MdOutlinePerson } from "react-icons/md";
+import { BsExclamation } from "react-icons/bs";
+import { CiSearch } from "react-icons/ci";
+import { IoHeartOutline } from "react-icons/io5";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+
 const theme = "default";
 
 export const Layout = () => {
@@ -27,8 +34,8 @@ const Header = () => (
     `}>
       <div className={classes.furnio}>
         <a href="/">
-          <img src="/icon-furnio.svg" alt="Furnio icon" />
-          <span>Furnio</span>
+          <img src="/icon-furniro.svg" alt="Furniro icon" />
+          <span>Furniro</span>
         </a>
       </div>
       <nav className={classes.headerPageNav} aria-label="Main navigation">
@@ -40,20 +47,26 @@ const Header = () => (
         </ul>
       </nav>
       <div className={classes.headerActions}>
-        <button aria-label="Search">
-          {/* <SearchIcon /> */}
+        <button aria-label="Profile">
+          <div className={classes.profileButton}>
+            <MdOutlinePerson className={classes.reactIcon} />
+            <BsExclamation className={classes.profileExclam} />
+          </div>
         </button>
 
-        <button aria-label="Profile">
-          {/* <UserIcon /> */}
+        <button aria-label="Search">
+          <CiSearch className={`
+          ${classes.reactIcon}
+          ${classes.searchIcon}
+          `}/>
         </button>
 
         <button aria-label="Favourites">
-          {/* <HeartIcon /> */}
+          <IoHeartOutline className={classes.reactIcon}  />
         </button>
 
         <button aria-label="Shopping basket">
-          {/* <CartIcon /> */}
+          <AiOutlineShoppingCart className={classes.reactIcon}  />
         </button>
       </div>
     </div>
