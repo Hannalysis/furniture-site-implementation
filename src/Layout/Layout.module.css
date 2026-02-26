@@ -36,4 +36,21 @@
         max-width: 1440px;
         margin: 0 auto;
     }
+
+    /* Footer */
+    .furniroInfo {
+        grid-column: 1 / 5;
+    }
+    
+    .footerLinks {
+        grid-column: 5 / 7;
+    }
+        
+    .footerHelp {
+        grid-column: 7 / 9;
+    }
+    
+    .footerNewsletter {
+        grid-column: 9 / 12;
+    }
     }

@@ -28,7 +28,15 @@ const Footer = () => (
       ${classes.grid}
       ${classes.footerContainer}
     `}>
-      <div className={classes.footerNav}></div>
+      <div className={`
+      ${classes.footerNav}
+      ${classes.grid}
+      `}>
+        <div className={classes.furniroInfo}></div>
+        <div className={classes.footerLinks}></div>
+        <div className={classes.footerHelp}></div>
+        <div className={classes.footerNewsletter}></div>
+      </div>
       <div className={classes.footerCopyright}>
         <Typography variant="body1">2023 furino. All rights reverved</Typography>
       </div>
