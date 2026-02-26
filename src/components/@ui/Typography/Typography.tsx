@@ -13,20 +13,27 @@ type Variant =
   | "inherit"
   | "overline"
   | "subtitle1"
-  | "subtitle2";
+  | "subtitle2"
+  | "brand"
+  | "navlink"
+  ;
 
-type TypographyProps = {
+type TypographyOwnProps<E extends React.ElementType = "span"> = {
   variant?: Variant;
-  as?: React.ElementType;
+  as?: E;
   children: React.ReactNode;
 };
 
-export const Typography = ({
+type TypographyProps<E extends React.ElementType> = TypographyOwnProps<E> &
+  Omit<React.ComponentPropsWithoutRef<E>, keyof TypographyOwnProps>;
+
+export const Typography = <E extends React.ElementType = "span">({
   variant = "body1",
   as,
   children,
-}: TypographyProps) => {
-  const variantMap = {
+  ...props
+}: TypographyProps<E>) => {
+  const variantMap: Record<Variant, React.ElementType> = {
     heading1: "h1",
     heading2: "h2",
     heading3: "h3",
@@ -40,10 +47,12 @@ export const Typography = ({
     overline: "span",
     subtitle1: "p",
     subtitle2: "p",
+    brand: "span",
+    navlink: "a",
   };
 
   const Component = as || variantMap[variant];
   const variantStyles = classes[`typography-${variant}`];
 
-  return <Component className={variantStyles}>{children}</Component>;
+  return <Component className={variantStyles}{...props}>{children}</Component>;
 };
