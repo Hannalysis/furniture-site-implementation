@@ -35,15 +35,31 @@ const Header = () => (
       <div className={classes.furnio}>
         <a href="/">
           <img src="/icon-furniro.svg" alt="Furniro icon" />
-          <span>Furniro</span>
+          <Typography variant="brand">Furniro</Typography>
         </a>
       </div>
       <nav className={classes.headerPageNav} aria-label="Main navigation">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/shop">Shop</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+            <li>
+            <Typography variant="navlink" as="a" href="/">
+              Home
+            </Typography>
+            </li>
+            <li>
+            <Typography variant="navlink" as="a" href="/shop">
+              Shop
+            </Typography>
+            </li>
+            <li>
+            <Typography variant="navlink" as="a" href="/about">
+              About
+            </Typography>
+            </li>
+            <li>
+            <Typography variant="navlink" as="a" href="/contact">
+              Contact
+            </Typography>
+            </li>
         </ul>
       </nav>
       <div className={classes.headerActions}>
