@@ -35,7 +35,7 @@ npm run dev
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=react,vite,ts,html,css,vscode&perline=8" />
   </a>
-    <h4><u>Packages:</u><br/><span style = "font-weight:lighter">classNames, react-router-dom</span></h4>
+    <h4><u>Packages:</u><br/><span style = "font-weight:lighter">classNames, react-router-dom, react-icons</span></h4>
 </p>
 
 # Process
@@ -65,6 +65,8 @@ npm run dev
 Also added the gap between main sections. Chose 56px as it matched two of 4 of the gaps in the home sections of the figma design.
 
 <p align = "center"><i>--- Skeleton implemented | Ready to translate the Home page from figma ---<i></p>
+
+- #PR10 Implemented pass for header, which involved updating the Typography system due to the component originally disallowing href properties. Created new Typography variants for navlink and brand. Header spacing and styling now matches almost like for like against the figma design (just a small misalignment for the react icons as I could not find a matching profile icon, and all icons are from different sub libraries.) React icons package installed.
 
 
 # Author
