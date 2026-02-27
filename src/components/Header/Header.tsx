@@ -1,6 +1,7 @@
 import { Typography } from "../@ui/Typography/Typography";
 import  layoutClasses  from "../../Layout/Layout.module.css";
 import classes from "./Header.module.css"
+import { Link } from "react-router-dom";
 
 /* Header icons */
 import { MdOutlinePerson } from "react-icons/md";
@@ -26,22 +27,22 @@ export const Header = () => (
       <nav className={classes.headerPageNav} aria-label="Main navigation">
         <ul>
             <li>
-            <Typography variant="navlink" as="a" href="/">
+            <Typography variant="navlink" as={Link} to="/">
               Home
             </Typography>
             </li>
             <li>
-            <Typography variant="navlink" as="a" href="/shop">
+            <Typography variant="navlink" as={Link} to="/shop">
               Shop
             </Typography>
             </li>
             <li>
-            <Typography variant="navlink" as="a" href="/about">
+            <Typography variant="navlink" as={Link} to="/about">
               About
             </Typography>
             </li>
             <li>
-            <Typography variant="navlink" as="a" href="/contact">
+            <Typography variant="navlink" as={Link} to="/contact">
               Contact
             </Typography>
             </li>
