@@ -35,14 +35,19 @@ const Footer = () => {
       ${classes.footerNav}
       ${classes.grid}
       `}>
-        <div className={classes.furniroInfo}>
-          <span>Furniro.</span>
-          <p>999 University Drive Suite 999 Coral Gables,
+        <div className={classes.footerFurniroInfo}>
+          <Typography variant="heading4">
+              Furniro.
+          </Typography>
+          <p>999 University Drive Suite 999 Coral Gables, <br/>
              FL 99999 USA
           </p>
         </div>
         <div className={classes.footerLinks}>
-          <span>Links</span>
+          <Typography variant ="subtitle2"
+            className={classes.footerHeading}>
+              Links
+          </Typography>
           <ul>
             <li>
             <Typography variant="navlink" as={Link} to="/">
@@ -67,7 +72,10 @@ const Footer = () => {
           </ul> 
         </div>
         <div className={classes.footerHelp}>
-          <span>Help</span>
+          <Typography variant ="subtitle2"
+            className={classes.footerHeading}>
+              Help
+          </Typography>
           <ul>
             <li>
             <Typography variant="navlink" as={Link} to="/">
@@ -87,7 +95,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className={classes.footerNewsletter}>
-          <span>Newsletter</span>
+          <Typography variant ="subtitle2"
+            className={classes.footerHeading}>
+              Newsletter
+          </Typography>
           <div className={classes.inputAndSub}>
             <input
               type="email"
@@ -97,7 +108,7 @@ const Footer = () => {
               placeholder="Enter Your Email Address"
               autoComplete="email"
             />
-            <button>SUBSCRIBE</button>
+            <button className={classes.subButton}>SUBSCRIBE</button>
           </div>
         </div>
       </div>

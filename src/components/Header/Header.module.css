@@ -36,6 +36,7 @@
     height: 28px;
     width: 28px;
     background: transparent;
+    cursor: pointer;
 }
 
 .reactIcon {
