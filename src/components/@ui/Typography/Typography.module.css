@@ -5,6 +5,15 @@
   letter-spacing: var(--letter-spacing-h1);
 }
 
+.typography-heading4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
+}
+
+.typography-heading6 {
+  font-size: var(--font-size-h6);
+}
+
 .typography-brand {
   font-family: var(--font-furniro);
   font-weight: var(--font-weight-bold);
