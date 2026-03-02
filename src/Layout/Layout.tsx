@@ -24,6 +24,7 @@ export const Layout = () => {
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+
   return (
     <footer className={classes.footer}>
     <div className={`
@@ -44,7 +45,7 @@ const Footer = () => {
           </p>
         </div>
         <div className={classes.footerLinks}>
-          <Typography variant ="subtitle2"
+          <Typography variant="subtitle2"
             className={classes.footerHeading}>
               Links
           </Typography>
@@ -72,7 +73,7 @@ const Footer = () => {
           </ul> 
         </div>
         <div className={classes.footerHelp}>
-          <Typography variant ="subtitle2"
+          <Typography variant="subtitle2"
             className={classes.footerHeading}>
               Help
           </Typography>
@@ -95,11 +96,11 @@ const Footer = () => {
           </ul>
         </div>
         <div className={classes.footerNewsletter}>
-          <Typography variant ="subtitle2"
+          <Typography variant="subtitle2"
             className={classes.footerHeading}>
               Newsletter
           </Typography>
-          <div className={classes.inputAndSub}>
+          <div className={classes.inputEmail}>
             <input
               type="email"
               id="email"
@@ -108,8 +109,15 @@ const Footer = () => {
               placeholder="Enter Your Email Address"
               autoComplete="email"
             />
-            <button className={classes.subButton}>SUBSCRIBE</button>
           </div>
+        </div>
+        <div className={classes.footerSubscribe}>
+          <Typography variant ="subtitle2"
+            className={classes.footerHeading}>
+            &nbsp; {/*Empty header to give consistent spacing */}
+          </Typography>
+          <button 
+            className={classes.subButton}>SUBSCRIBE</button>
         </div>
       </div>
       <div className={classes.footerCopyright}>
