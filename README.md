@@ -68,6 +68,8 @@ Also added the gap between main sections. Chose 56px as it matched two of 4 of t
 
 - #PR10 Implemented pass for header, which involved updating the Typography system due to the component originally disallowing href properties. Created new Typography variants for navlink and brand. Header spacing and styling now matches almost like for like against the figma design (just a small misalignment for the react icons as I could not find a matching profile icon, and all icons are from different sub libraries.) React icons package installed.
 
+Footer implemented to mirror figma design. I did have to make a design decision surrounding the Newsletter subsection content. The 'underline' (bottom-border) for the input and sub button are a little thinner, as even one more pixel is just too emphasised, and I have learnt previously that dealing with half pixels can cause issues with the lines not rendering in React applications.
+
 
 # Author
 
