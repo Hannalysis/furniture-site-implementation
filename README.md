@@ -58,17 +58,17 @@ npm run dev
 
 - #PR8 Implemented React Router DOM, for scalability - for when this project goes past the initial MVP and we create other linking pages to visit.
 
-<p align = "center"><i>--- System implemented ---<i></p>
+<p align = "center"><i>--- System implemented ---</i></p>
 
 - #PR9 Implemented the basic skeleton with appropriate container classes (including making grid a reusable class), and placeholder padding-blocks to grey-box & preserve the sections.
 
 Also added the gap between main sections. Chose 56px as it matched two of 4 of the gaps in the home sections of the figma design.
 
-<p align = "center"><i>--- Skeleton implemented | Ready to translate the Home page from figma ---<i></p>
+<p align = "center"><i>--- Skeleton implemented | Ready to translate the Home page from figma ---</i></p>
 
-- #PR10 Implemented pass for header, which involved updating the Typography system due to the component originally disallowing href properties. Created new Typography variants for navlink and brand. Header spacing and styling now matches almost like for like against the figma design (just a small misalignment for the react icons as I could not find a matching profile icon, and all icons are from different sub libraries.) React icons package installed.
+- #PR10 Pt1: Implemented pass for header, which involved updating the Typography system due to the component originally disallowing href properties. Created new Typography variants for navlink and brand. Header spacing and styling now matches almost like for like against the figma design (just a small misalignment for the react icons as I could not find a matching profile icon, and all icons are from different sub libraries.) React icons package installed.
 
-Footer implemented to mirror figma design. I did have to make a design decision surrounding the Newsletter subsection content. The 'underline' (bottom-border) for the input and sub button are a little thinner, as even one more pixel is just too emphasised, and I have learnt previously that dealing with half pixels can cause issues with the lines not rendering in React applications.
+- #PR10 Pt2: Footer implemented to mirror figma design. I did have to make a design decision surrounding the Newsletter subsection content. The 'underline' (bottom-border) for the input and sub button are a little thinner, as even one more pixel is just too emphasised, and I have learnt previously that dealing with half pixels can cause issues with the lines not rendering in React applications.
 
 
 # Author
