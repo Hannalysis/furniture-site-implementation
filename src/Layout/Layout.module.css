@@ -1,12 +1,21 @@
+.grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+}
 
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+  }
+}
 
 @media (min-width: 1024px) {
     /* General layout */
     .grid {
-        display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 30px; 
-        box-sizing: border-box;
+        gap: 30px;
     }
 
     .contentContainer {
