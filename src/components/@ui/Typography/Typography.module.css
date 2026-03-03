@@ -4,3 +4,22 @@
   line-height: var(--line-height-h1);
   letter-spacing: var(--letter-spacing-h1);
 }
+
+.typography-heading4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
+}
+
+.typography-heading6 {
+  font-size: var(--font-size-h6);
+}
+
+.typography-brand {
+  font-family: var(--font-furniro);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-furniro);
+}
+
+.typography-navlink {
+  font-weight: var(--font-weight-medium);
+}

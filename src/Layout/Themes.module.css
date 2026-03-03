@@ -5,8 +5,8 @@
   --font-weight-regular: 400;
 
   /* --- Brand Specific --- */
-  --font-furnio: "Montserrat", sans-serif;
-  --font-size-furnio: 34px;
+  --font-furniro: "Montserrat", sans-serif;
+  --font-size-furniro: 34px;
 
   /* --- Colouring --- */
 
@@ -44,4 +44,7 @@
 
   /* H5 */
   --font-size-h5: 20px;
+
+  /* H6 */
+  --font-size-h6: 16px;
 }

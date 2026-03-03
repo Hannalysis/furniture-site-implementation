@@ -1,8 +1,10 @@
 import classNames from "classnames";
-import { Typography } from "../components/@ui/Typography/Typography";
 import classes from "./Layout.module.css";
 import themes from "./Themes.module.css";
 import { Outlet } from "react-router-dom";
+
+import { Header } from "../components/Header/Header"
+import { Footer } from "../components/Footer/Footer"
 
 const theme = "default";
 
@@ -17,29 +19,3 @@ export const Layout = () => {
     </div>
   );
 };
-
-const Header = () => (
-  <header className={classes.header}>
-    <div className={`
-      ${classes.contentContainer}
-      ${classes.grid}
-      ${classes.headerNav}
-    `}>
-    </div>
-  </header>
-);
-
-const Footer = () => (
-  <footer className={classes.footer}>
-    <div className={`
-      ${classes.contentContainer}
-      ${classes.grid}
-      ${classes.footerContainer}
-    `}>
-      <div className={classes.footerNav}></div>
-      <div className={classes.footerCopyright}>
-        <Typography variant="body1">2023 furino. All rights reverved</Typography>
-      </div>
-    </div>
-  </footer>
-);
