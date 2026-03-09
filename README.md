@@ -70,6 +70,8 @@ Also added the gap between main sections. Chose 56px as it matched two of 4 of t
 
 - #PR10 Pt2: Footer implemented to mirror figma design. I did have to make a design decision surrounding the Newsletter subsection content. The 'underline' (bottom-border) for the input and sub button are a little thinner, as even one more pixel is just too emphasised, and I have learnt previously that dealing with half pixels can cause issues with the lines not rendering in React applications.
 
+- #PR11 Implemented the Banner section. Added the overline and subtitle1 Typrography properties and linked them to the appropriate text content within the Discovery container. Discovery's button is bespoke and does not quite match other buttons so it is styled and contained within the Banner component section for now.
+
 
 # Author
 
