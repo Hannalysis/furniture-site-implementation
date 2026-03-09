@@ -1,3 +1,22 @@
 .banner {
-    /* PH properties for structure intent */
+    position: relative;
+    --banner-discover-bg-colour: hsl(33, 100%, 95%);
+}
+
+.bannerDiscoverBox {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    background-color: var(--banner-discover-bg-colour);
+}
+
+@media (min-width: 1024px) {
+
+    .bannerDiscoverBox {
+        width: 643px;
+        height: 443px;
+        padding: 66px 41px 33px;
+    }
 }
