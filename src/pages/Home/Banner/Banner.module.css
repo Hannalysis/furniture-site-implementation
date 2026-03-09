@@ -10,6 +10,25 @@
     left: 50%;
     transform: translate(0%, -50%);
     background-color: var(--banner-discover-bg-colour);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerDiscoverBox h1 {
+    color: var(--accent-gold);
+    margin-top: 4px;
+    margin-bottom: 17px;
+}
+
+.bannerBuyButton {
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-gold);
+    color: var(--button-label-white);
+    font-size: var(--default-font-size);
+    font-weight: var(--font-weight-bold);
+    margin-top: auto;
 }
 
 @media (min-width: 1024px) {
@@ -18,5 +37,10 @@
         width: 643px;
         height: 443px;
         padding: 66px 41px 33px;
+    }
+
+    .bannerBuyButton {
+        width: 222px;
+        height: 74px;
     }
 }
