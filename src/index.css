@@ -12,6 +12,7 @@
 
   /* Global design tokens */
   --main-gap: 56px;
+  --default-font-size: 16px;
 }
 
 * {
@@ -21,7 +22,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: var(--default-font-size);
 }
 
 body {
