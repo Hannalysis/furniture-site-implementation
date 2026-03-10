@@ -1,5 +1,50 @@
 .banner {
-    /* PH properties for structure intent */
-    padding-block: calc(717px /2);
-    background-color: hsl(32, 57%, 97%);
+    position: relative;
+    --banner-discover-bg-colour: hsl(33, 100%, 95%);
+}
+
+.bannerDiscoverBox {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    background-color: var(--banner-discover-bg-colour);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerDiscoverBox h1 {
+    color: var(--accent-gold);
+    margin-top: 4px;
+    margin-bottom: 17px;
+}
+
+.bannerBuyButton {
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-gold);
+    color: var(--button-label-white);
+    font-size: var(--default-font-size);
+    font-weight: var(--font-weight-bold);
+    margin-top: auto;
+}
+
+@media (min-width: 1024px) {
+
+    .banner {
+        height: 717px;
+    }
+
+    .bannerDiscoverBox {
+        width: 643px;
+        height: 443px;
+        padding: 66px 41px 33px;
+    }
+
+    .bannerBuyButton {
+        width: 222px;
+        height: 74px;
+    }
 }

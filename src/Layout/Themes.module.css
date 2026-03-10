@@ -1,6 +1,7 @@
 .default {
   /* --- Primitives --- */
   --font-weight-bold: 700;
+  --font-weight-semi-bold: 600;
   --font-weight-medium: 500;
   --font-weight-regular: 400;
 
@@ -47,4 +48,11 @@
 
   /* H6 */
   --font-size-h6: 16px;
+
+  /* Overline */
+  --letter-spacing-overline: 3px;
+
+  /* Subtitle */
+  --font-size-subtitle: 18px;
+  --line-height-subtitle: 24px;
 }
