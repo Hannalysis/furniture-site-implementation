@@ -19,6 +19,7 @@
   --accent-gold: hsl(42, 59%, 45%);
   --button-label-white: hsl(0, 0%, 100%);
 
+  --card-bg: hsl(220, 16%, 96%);
   --card-text-colour: hsl(0, 0%, 23%);
   --card-inline-colour:hsl(0, 0%, 54%);
   --card-rp-strikethrough: hsl(0, 0%, 69%);
@@ -45,9 +46,11 @@
 
   /* H5 */
   --font-size-h5: 20px;
+  --line-height-h5: 150%;
 
   /* H6 */
   --font-size-h6: 16px;
+  --line-height-h6: 150%;
 
   /* Overline */
   --letter-spacing-overline: 3px;

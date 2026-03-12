@@ -21,8 +21,16 @@
   font-weight: var(--font-weight-bold);
 }
 
+.typography-heading5 {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semi-bold);
+  line-height: var(--line-height-h5);
+}
+
 .typography-heading6 {
   font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-h6);
 }
 
 .typography-overline {
