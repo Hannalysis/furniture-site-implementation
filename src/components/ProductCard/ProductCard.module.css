@@ -1,0 +1,14 @@
+.productCard {
+  grid-column: span 3; 
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard img {
+  width: 100%;
+  height: auto;
+}
+
+.productCard p {
+  text-align: center;
+}
