@@ -5,6 +5,12 @@
   letter-spacing: var(--letter-spacing-h1);
 }
 
+.typography-heading2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h2);
+}
+
 .typography-heading3 {
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-bold);
