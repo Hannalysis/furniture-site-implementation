@@ -6,3 +6,7 @@
     justify-self: center;
     color: var(--card-text-colour);
 }
+
+.ourProductsCardContainer {
+    margin: 32px 0;
+}
