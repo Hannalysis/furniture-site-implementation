@@ -72,6 +72,8 @@ Also added the gap between main sections. Chose 56px as it matched two of 4 of t
 
 - #PR11 Implemented the Banner section. Added the overline and subtitle1 Typrography properties and linked them to the appropriate text content within the Discovery container. Discovery's button is bespoke and does not quite match other buttons so it is styled and contained within the Banner component section for now.
 
+- #PR12 Implemented the Browse The Range (btr) section. I decided to not place the subheader within the Typography system as it's specific properties are not utilised in any of the other 8 pages of the figma design. I'm also overriding the h4 Typography within the room headers as the font weight is bespoke to that section, however otherwise it's still mostly h4 for other properties it uses.
+
 
 # Author
 

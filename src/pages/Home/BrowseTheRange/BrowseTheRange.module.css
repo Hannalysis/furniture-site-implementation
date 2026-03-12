@@ -1,5 +1,39 @@
 .browseTheRange {
-    /* PH properties for structure intent */
-    padding-block: calc(685px / 2);
-    background-color: hsl(33, 12%, 65%);
+    --btr-subheader-color: hsl(0, 0%, 40%);
+
+    height: 685px;
+    display: flex;
+    flex-direction: column;
+}
+
+.browseTheRange h3 {
+    align-self: center;
+}
+
+.btrSubHeader {
+    color: var(--btr-subheader-color);
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-weight-regular);
+    align-self: center;
+}
+
+.btrContentContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+}
+
+.btrRoomContainer {
+    justify-items: center;
+}
+
+.btrRoomContainer h4 {
+    font-weight: var(--font-weight-semi-bold);
+    margin-top: 30px;
+}
+
+.btrRoomImage {
+    height: 480px;
+    width: 381px;
+    border-radius: 10px;
 }
