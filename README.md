@@ -74,6 +74,10 @@ Also added the gap between main sections. Chose 56px as it matched two of 4 of t
 
 - #PR12 Implemented the Browse The Range (btr) section. I decided to not place the subheader within the Typography system as it's specific properties are not utilised in any of the other 8 pages of the figma design. I'm also overriding the h4 Typography within the room headers as the font weight is bespoke to that section, however otherwise it's still mostly h4 for other properties it uses.
 
+- #PR13 Implemented the Our Products section. The Product Card contents are utilising more Typography header elements than perhaps expected usually, however there are reusable elements here (ie product description and sticker text), and the product card text is more defined and distinct than product cards can typically be, so I allowed the exception in this case.
+The sticker content text is also more centred for the sale sticker type than the figma, to remain consistent with the centred new sticker (which does match the figma).  
+Additionally, I had to import the ProductCardData and explicitly set it to the products array list once the optional sticker object existed; and is also more TypeScript compliant.
+
 
 # Author
 
