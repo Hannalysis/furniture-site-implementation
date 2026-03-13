@@ -1,26 +1,11 @@
 import { Typography } from "../@ui/Typography/Typography"
 import classes from "./ProductCard.module.css"
+import { type ProductCardData } from "./product.types"
 
-
-export type ProductCardData = {
-  id: number
-  title: string
-  image: string
-  desc: string
-  price: string
-  wasPrice?: string
-  sticker?: Sticker
-}
 
 type Props = {
   product: ProductCardData
 }
-
-export type Sticker = {
-  type: "sale" | "new" ;
-  label: string;                    
-};
-
 
 export function ProductCard({ product }: Props) {
   return (
@@ -44,5 +29,5 @@ export function ProductCard({ product }: Props) {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

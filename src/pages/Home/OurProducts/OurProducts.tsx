@@ -3,7 +3,7 @@ import classes from "./OurProducts.module.css"
 import layoutClasses from "../../../Layout/Layout.module.css"
 
 import { ProductCard } from "../../../components/ProductCard/ProductCard"
-import { type ProductCardData } from "../../../components/ProductCard/ProductCard"
+import { type ProductCardData } from "../../../components/ProductCard/product.types"
 import { ShowMoreButton } from "../../../components/@ui/ShowMoreButton/ShowMoreButton";
 
 import imgProduct1 from "../../../assets/home/our-products/img-syltherine-stylish-cafe-table.jpg"
