@@ -66,7 +66,7 @@ Also added the gap between main sections. Chose 56px as it matched two of 4 of t
 
 <p align = "center"><i>--- Skeleton implemented | Ready to translate the Home page from figma ---</i></p>
 
-- #PR10 Pt1: Implemented pass for header, which involved updating the Typography system due to the component originally disallowing href properties. Created new Typography variants for navlink and brand. Header spacing and styling now matches almost like for like against the figma design (just a small misalignment for the react icons as I could not find a matching profile icon, and all icons are from different sub libraries.) React icons package installed.
+- #PR10 Pt1: Implemented pass for Header, which involved updating the Typography system due to the component originally disallowing href properties. Created new Typography variants for navlink and brand. Header spacing and styling now matches almost like for like against the figma design (just a small misalignment for the react icons as I could not find a matching profile icon, and all icons are from different sub libraries.) React icons package installed.
 
 - #PR10 Pt2: Footer implemented to mirror figma design. I did have to make a design decision surrounding the Newsletter subsection content. The 'underline' (bottom-border) for the input and sub button are a little thinner, as even one more pixel is just too emphasised, and I have learnt previously that dealing with half pixels can cause issues with the lines not rendering in React applications.
 
@@ -74,9 +74,10 @@ Also added the gap between main sections. Chose 56px as it matched two of 4 of t
 
 - #PR12 Implemented the Browse The Range (btr) section. I decided to not place the subheader within the Typography system as it's specific properties are not utilised in any of the other 8 pages of the figma design. I'm also overriding the h4 Typography within the room headers as the font weight is bespoke to that section, however otherwise it's still mostly h4 for other properties it uses.
 
-- #PR13 Implemented the Our Products section. The Product Card contents are utilising more Typography header elements than perhaps expected usually, however there are reusable elements here (ie product description and sticker text), and the product card text is more defined and distinct than product cards can typically be, so I allowed the exception in this case.
+- #PR13 Pt1: Implemented the Our Products section. The Product Card contents are utilising more Typography header elements than perhaps expected usually, however there are reusable elements here (ie product description and sticker text), and the product card text is more defined and distinct than product cards can typically be, so I allowed the exception in this case.
 The sticker content text is also more centred for the sale sticker type than the figma, to remain consistent with the centred new sticker (which does match the figma).  
-Additionally, I had to import the ProductCardData and explicitly set it to the products array list once the optional sticker object existed; and is also more TypeScript compliant.
+
+- #PR13 Pt2: Additionally, I had to import the ProductCardData and explicitly set it to the products array list once the optional sticker object existed; and is also more TypeScript compliant.  Finally, I refactored elements of the OurProducts component to keep the intention more layout focused; by abstracting the product data into its own file, and placing the ProductCard types into their own bespoke file. I initially thought to abtract the stickers into their own component, but realising they are only present with the ProductCards on the web pages, but realised it's cleaner not to.
 
 
 # Author
