@@ -1,10 +1,15 @@
 .ourProducts {
     height: 1084px;
+    display: flex;
+    flex-direction: column;
 }
 
 .ourProducts h2 {
-    justify-self: center;
     color: var(--card-text-colour);
+}
+
+.ourProducts h2, button {
+    align-self: center;
 }
 
 .ourProductsCardContainer {
