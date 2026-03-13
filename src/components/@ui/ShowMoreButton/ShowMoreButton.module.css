@@ -1,0 +1,13 @@
+.buttonShowMore {
+    color: var(--accent-gold);
+    background-color: var(--button-label-white);
+    border-color: var(--accent-gold);
+    border-style: solid;
+    width: 245px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.buttonShowMore h6 {
+    font-weight: var(--font-weight-semi-bold);
+}

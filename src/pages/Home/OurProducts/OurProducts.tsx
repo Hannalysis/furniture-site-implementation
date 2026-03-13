@@ -4,6 +4,7 @@ import layoutClasses from "../../../Layout/Layout.module.css"
 
 import { ProductCard } from "../../../components/ProductCard/ProductCard"
 import { type ProductCardData } from "../../../components/ProductCard/ProductCard"
+import { ShowMoreButton } from "../../../components/@ui/ShowMoreButton/ShowMoreButton";
 
 import imgProduct1 from "../../../assets/home/our-products/img-syltherine-stylish-cafe-table.jpg"
 import imgProduct2 from "../../../assets/home/our-products/img-leviosa-stylish-cafe-chair.jpg"
@@ -38,6 +39,6 @@ export const OurProducts = () => (
                         <ProductCard key={product.id} product={product} />
                     ))}
             </div>
-            <button>Show More</button>
+            <ShowMoreButton />
     </section>
 );
