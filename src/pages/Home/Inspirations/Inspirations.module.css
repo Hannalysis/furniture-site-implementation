@@ -1,5 +1,7 @@
 .inspirations {
     --inspirations-bg-colour:  hsl(32, 57%, 97%);
+    --inspirations-room-card-bg: hsla(0, 0%, 100%, 72%);
+    --font-size-inner-peace: 28px;
 
     width: 100%;
     background-color: var(--inspirations-bg-colour);
@@ -37,8 +39,69 @@
     margin-top: auto;
 }
 
-.inspirationsRoomCardContainer {
+.inspirationsRoomCardContainer, .inspirationsCarousel {
+    height: 582px;
+}
 
+.inspirationsRoomCardContainer {
+    margin-left: 42px;
+    position: relative;
+}
+
+.inspirationsRoomCardContentContainer {
+    position: absolute;
+    transform: translate(9%, -124%);
+    display: flex;
+    align-items: flex-end;
+}
+
+.inspirationsRoomCardBox {
+    height: 130px;
+    width: 217px;
+    background-color: var(--inspirations-room-card-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inspirationsRoomCardLabel {
+    display: flex;
+}
+
+.inspirationsRoomCardLabel h6 {
+    color:  var(--header-inline-colour);
+}
+
+.inspirationsLongEmDash {
+  height: 1px;
+  width: 27px; 
+  background-color: var(--header-inline-colour);
+  align-self: center;
+  margin: 0 8px;
+}
+
+.inspirationsInnerPeaceText {
+    font-size: var(--font-size-inner-peace);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.inspirationsButtonContainer {
+    height: 48px;
+}
+
+.buttonRightArrow {
+    width: 48px;
+    height: 48px;
+    background-color: var(--accent-gold);
+    color: var(--bg);
+    border: none;
+    cursor: pointer;
+}
+
+.reactIcon {
+    width: 24px;
+    height: 24px;
 }
 
 .inspirationsCarousel {
