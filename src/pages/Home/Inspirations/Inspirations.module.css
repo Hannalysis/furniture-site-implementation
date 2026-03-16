@@ -7,4 +7,48 @@
 
 .inspirationsContainer {
     height: 670px;
+    display: flex;
+    align-items: center;
+}
+
+.inspirationsHeaderContainer {
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inspirationsHeaderContainer h2 {
+    margin-bottom: 7px;
+}
+
+.inspirationsHeaderContainer h6 {
+   color: var(--header-inline-colour);
+}
+
+.buttonExploreMore {
+    background-color: var(--accent-gold);
+    color: var(--bg);
+    font-family: var(--font-main-poppins);
+    font-weight: var(--font-weight-semi-bold);
+    width: 176px;
+    height: 48px;
+    border: none;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.inspirationsRoomCardContainer {
+
+}
+
+.inspirationsCarousel {
+
+}
+
+@media (min-width: 1024px) {
+
+    .inspirationsHeaderContainer {
+        width: 422px;
+    }
+
 }
