@@ -61,8 +61,9 @@
     background-color: var(--inspirations-room-card-bg);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    padding-left: 32px;
 }
 
 .inspirationsRoomCardLabel {
@@ -84,6 +85,8 @@
 .inspirationsInnerPeaceText {
     font-size: var(--font-size-inner-peace);
     font-weight: var(--font-weight-semi-bold);
+    color: var(--card-text-colour);
+    margin-top: 8px;
 }
 
 .inspirationsButtonContainer {
