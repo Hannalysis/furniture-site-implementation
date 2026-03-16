@@ -1,6 +1,17 @@
 .ourProducts {
-    grid-column: 1 / -1;
-    /* PH properties for structure intent */
-    padding-block: calc(1084px /2);
-    background-color: hsla(33, 12%, 65%, 70%);
+    height: 1084px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ourProducts h2 {
+    color: var(--card-text-colour);
+}
+
+.ourProducts h2, button {
+    align-self: center;
+}
+
+.ourProductsCardContainer {
+    margin: 32px 0;
 }
