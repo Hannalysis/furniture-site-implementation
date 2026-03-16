@@ -1,9 +1,10 @@
 .inspirations {
+    --inspirations-bg-colour:  hsl(32, 57%, 97%);
+
     width: 100%;
-    background-color: hsl(32, 57%, 97%);
+    background-color: var(--inspirations-bg-colour);
 }
 
 .inspirationsContainer {
-    /* PH properties for structure intent */
-    padding-block: calc(670px /2);
+    height: 670px;
 }
