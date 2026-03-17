@@ -18,9 +18,12 @@ export const Header = () => (
       ${layoutClasses.grid}
       ${classes.headerNav}
     `}>
-      <div className={classes.furnio}>
+      <div className={classes.furniro}>
         <a href="/">
-          <img src="/icon-furniro.svg" alt="Furniro icon" />
+          <img 
+            src="/icon-furniro.svg" 
+            alt="Furniro icon"
+            className={classes.furniroIcon} />
           <Typography variant="brand">Furniro</Typography>
         </a>
       </div>

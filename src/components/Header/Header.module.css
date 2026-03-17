@@ -9,13 +9,18 @@
     background-color: var(--bg);
 }
 
-.furnio a {
+.furniroIcon {
+    height: 41px;
+    width: 50px;
+}
+
+.furniro a {
     display: flex;
     gap: 5px;
     margin-left: -46px;
 }
 
-.furnio a, .headerPageNav a {
+.furniro a, .headerPageNav a {
     text-decoration: none;
     color: inherit;
 }
@@ -62,8 +67,8 @@
 }
 
 @media (min-width: 1024px) {
-    /* Header */
-    .furnio {
+
+    .furniro {
         grid-column: 1 / 3;
     }
 
@@ -83,4 +88,4 @@
         align-items: center;
         gap: 45px;
     }
-    }
+}
