@@ -1,12 +1,18 @@
 import { Typography } from "../../../components/@ui/Typography/Typography";
 import classes from "./Inspirations.module.css"
 import layoutClasses from "../../../Layout/Layout.module.css"
+import Carousel from "../../../components/Carousel/Carousel";
 
 import { BsArrowRight } from "react-icons/bs";
-// import { PiArrowRightThin } from "react-icons/pi";
 
 import imgInspirationsInnerPeace from "../../../assets/home/inspiration/img-inspiration-bed-room-inner-peace.jpg"
+import imgInspirationsDiningRoom from "../../../assets/home/inspiration/img-inspiration-dining-room.jpg"
+import imgInspirationsEndTable from "../../../assets/home/inspiration/img-inspiration-end-table.jpg"
 
+const images = [
+    imgInspirationsDiningRoom,
+    imgInspirationsEndTable
+];
 
 export const Inspirations = () => (
     <section className={`${classes.inspirations}`}>
@@ -38,7 +44,9 @@ export const Inspirations = () => (
                         </div>
                     </div>
                 </div>
-                <div className={classes.inspirationsCarousel}></div>
+                <div className={classes.inspirationsCarousel}>
+                    <Carousel images={images} />
+                </div>
         </div>
     </section>
 );
