@@ -22,7 +22,7 @@ export const Inspirations = () => (
                     <img
                         src={imgInspirationsInnerPeace}
                         alt="Minimalist bed room with a wall of art in frames"
-                        className={classes.InspirationsImg}
+                        className={classes.inspirationsImg}
                     />
                     <div className={classes.inspirationsRoomCardContentContainer}>
                         <div className={classes.inspirationsRoomCardBox}>
