@@ -50,7 +50,6 @@
 
 .inspirationsRoomCardContentContainer {
     position: absolute;
-    /* transform: translate(9%, -124%); */
     display: flex;
     align-items: flex-end;
     bottom: 4%;
@@ -68,7 +67,8 @@
 }
 
 .inspirationsImg {
-
+    height: 582px;
+    width: 404px;
 }
 
 .inspirationsRoomCardLabel {
