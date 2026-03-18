@@ -9,6 +9,7 @@ type CarouselProps = {
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [index, setIndex] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleNext = () => {
     if (index < images.length - 1) {
@@ -16,17 +17,18 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     }
   };
 
+
   return (
     <div className={classes.carouselContainer}>
       <div
         className={classes.carouselTrack}
-        style={{
-          transform: `translateX(-${index * 70}%)`,
-        }}
+        style={{ "--index": index, } as React.CSSProperties}
       >
         {images.map((src, i) => (
           <div className={classes.CarouselItem} key={i}>
-            <img src={src} alt={`slide-${i}`} />
+            <img src={src} alt={`room-${i}`} 
+              onLoad={() => setImageLoaded(true)}
+              className={`${classes.projectImage} ${imageLoaded ? classes.loaded : ''}`}/>
           </div>
         ))}
       </div>
@@ -34,6 +36,22 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       <button className={classes.buttonCarousel} onClick={handleNext}>
         <BsChevronRight className={classes.reactIcon}/>
       </button>
+
+      <div className={classes.carouselIndicators}>
+        {images.map((_, i) => (
+          <button
+            key={i}
+           className={`${classes.indicator} ${i === index ? classes.activeIndicator : ""}`}
+            onClick={() => {
+              setImageLoaded(false);
+              setIndex(i);
+            }}
+            aria-label={`Go to room image ${index + 1}`}
+          >
+            <div className={`${classes.innerIndicator} ${i === index ? classes.activeInnerIndicator : ""}`}></div>
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
