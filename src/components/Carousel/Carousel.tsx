@@ -26,7 +26,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       >
         {images.map((src, i) => (
           <div className={classes.CarouselItem} key={i}>
-            <img src={src} alt={`room-${i}`} 
+            <img src={src} alt={`room-${i + 1}`} 
               onLoad={() => setImageLoaded(true)}
               className={`${classes.projectImage} ${imageLoaded ? classes.loaded : ''}`}/>
           </div>
