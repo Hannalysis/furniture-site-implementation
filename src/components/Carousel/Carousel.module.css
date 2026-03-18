@@ -1,0 +1,73 @@
+.carouselContainer {
+  --innerIndicatorColour: hsl(0, 0%, 85%);
+
+  position: relative;
+  width: 448px;
+  overflow: hidden;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+  transform: translateX(calc(-1 * var(--index) * 70%));
+  height: 486px;
+  gap: 24px;
+}
+
+.carouselItem {
+  flex: 0 0 70%; /* for peek effect */
+  margin-right: 10px;
+}
+
+.buttonCarousel {
+  position: absolute;
+  top: 48%;
+  right: 13%;
+  background-color: var(--bg);
+  color: var(--accent-gold);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.reactIcon {
+    stroke-width: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.carouselIndicators {
+  display: flex;
+  gap: 20px;
+  margin-top: 2.5rem; /* aka 40px */
+}
+
+.indicator {
+  width: 27px;
+  height: 27px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.innerIndicator {
+  width: 11px;
+  height: 11px;
+  background-color: var(--innerIndicatorColour);
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.activeIndicator {
+  background-color: var(--highlight);
+  background-color: var(--highlight-alt);
+  border: 1.5px solid var(--accent-gold);
+
+}
+
+.activeInnerIndicator {
+  background-color: var(--accent-gold);
+}

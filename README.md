@@ -79,6 +79,11 @@ The sticker content text is also more centred for the sale sticker type than the
 
 - #PR13 Pt2: Additionally, I had to import the ProductCardData and explicitly set it to the products array list once the optional sticker object existed; and is also more TypeScript compliant.  Finally, I refactored elements of the OurProducts component to keep the intention more layout focused; by abstracting the product data into its own file, and placing the ProductCard types into their own bespoke file. I initially thought to abtract the stickers into their own component, but realising they are only present with the ProductCards on the web pages, but realised it's cleaner not to.
 
+- #PR14 Pt1: Inspiration section implemented. When working on the Room Card subsection (the middle container), I was hoping to reuse one of the react-icons packages I had already utilised for the header, and thankfully, the bs one had a good match for the right arrow button. Transforming the inner container to be exact has proven difficult. I've got it extremly close to the figma; and decided to align exactly height and allow .5% off on the horizontal for now. Meaning, the top of the container aligns well against the bears arm and the button sits just under the top of the mattress, however the top of the container sits a fraction too high compared to the end table.
+
+- #PR14 Pt2: Carousel items and their supporting indicators are dynamically generated based on the amount of inspirations images within the inspirationsCarousel data file. 
+(The Figma design shows 4 indicators but only provides two images for this section, so I've implemented the two which generates two indicators). 
+
 
 # Author
 
