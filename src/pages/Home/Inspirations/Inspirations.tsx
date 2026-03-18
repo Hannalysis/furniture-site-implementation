@@ -6,13 +6,8 @@ import Carousel from "../../../components/Carousel/Carousel";
 import { BsArrowRight } from "react-icons/bs";
 
 import imgInspirationsInnerPeace from "../../../assets/home/inspiration/img-inspiration-bed-room-inner-peace.jpg"
-import imgInspirationsDiningRoom from "../../../assets/home/inspiration/img-inspiration-dining-room.jpg"
-import imgInspirationsEndTable from "../../../assets/home/inspiration/img-inspiration-end-table.jpg"
+import { images } from "../../../data/inspirationsCarousel.data"
 
-const images = [
-    imgInspirationsDiningRoom,
-    imgInspirationsEndTable
-];
 
 export const Inspirations = () => (
     <section className={`${classes.inspirations}`}>
