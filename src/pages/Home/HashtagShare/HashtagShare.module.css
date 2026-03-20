@@ -17,3 +17,31 @@
 .hashtagShare h5 {
     color: var(--header-inline-colour);
 }
+
+.shareImagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+}
+
+.shareImagesLeftContainer, .shareImagesRightContainer
+ {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.shareImagesInnerTopLeftBox, .shareImagesInnerTopRightBox {
+    display: flex;
+    align-items: flex-end;
+}
+
+.shareImagesInnerBottomLeftBox, .shareImagesInnerBottomRightBox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hashtagShare img {
+    margin: 0 8px;
+}
