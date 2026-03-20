@@ -29,6 +29,7 @@ body {
   background: var(--bg);
   color: var(--layout-text-colour);
   font-family: var(--font-main-poppins);
+  display: flex;
 }
 
 main {
@@ -41,3 +42,11 @@ main {
 main > section {
   width: 100%;
 }
+
+@media (min-width: 1441px) {
+
+  body {
+    justify-content: center;
+  }
+
+  }
