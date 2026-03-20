@@ -2,7 +2,7 @@ import { Typography } from "../../../components/@ui/Typography/Typography";
 import layoutClasses from "../../../Layout/Layout.module.css"
 import classes from "./HashtagShare.module.css"
 
-import { shareImages } from "../../../data/hashtagshareImages.data"
+import { shareImages } from "../../../data/shareImages.data"
 
 
 export const HashtagShare = () => (
