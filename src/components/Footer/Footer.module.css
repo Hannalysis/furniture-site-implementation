@@ -79,6 +79,33 @@ input::placeholder, .subButton {
 @media (min-width: 1024px) {
 
     .footerFurniroInfo {
+        grid-column: 2 / 5;
+    }
+    
+    .footerLinks {
+        grid-column: 5 / 7;
+    }
+        
+    .footerHelp {
+        grid-column: 7 / 9;
+    }
+    
+    .footerNewsletter {
+        grid-column: 9 / 11;
+    }
+
+    .footerSubscribe {
+        grid-column: 11 / 12;
+    }
+    
+    .footerCopyright {
+    grid-column: 2 / -1;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .footerFurniroInfo {
         grid-column: 1 / 4;
     }
     
@@ -101,4 +128,4 @@ input::placeholder, .subButton {
     .footerCopyright {
     grid-column: 1 / -1;
     }
-    }
+}
