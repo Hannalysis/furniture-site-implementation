@@ -84,6 +84,8 @@ The sticker content text is also more centred for the sale sticker type than the
 - #PR14 Pt2: Carousel items and their supporting indicators are dynamically generated based on the amount of inspirations images within the inspirationsCarousel data file. 
 (The Figma design shows 4 indicators but only provides two images for this section, so I've implemented the two which generates two indicators). 
 
+- #PR15 A first pass of the Share section. Without a designer on hand to talk about how this is supposed to be handle in any form of responsiveness, I have strictly implemented the section for the 1400px layout. I do have some issues on previous implemented sections on smaller desktop views anyway, so that seems the appropriate next step.
+
 
 # Author
 
