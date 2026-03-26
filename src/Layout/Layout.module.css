@@ -4,10 +4,6 @@
     grid-template-columns: 1fr;
 }
 
-.contentContainer, .wideContainer {
-    width: 100%;
-}
-
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
@@ -18,10 +14,11 @@
 @media (min-width: 1024px) {
     /* General layout */
     .grid {
-        grid-template-columns: repeat(12, 1fr);
+        /* 75px is the design column width aka 1440px - margins - gaps */
+        grid-template-columns: repeat(12, minmax(75px, 1fr));
         gap: 30px;
     }
-    }
+}
 
 @media (min-width: 1240px) {
 
@@ -32,11 +29,6 @@
 }
 
 @media (min-width: 1440px) {
-
-    .contentContainer {
-        max-width: 1240px;
-        margin: 0 auto;
-    }
 
     .wideContainer {
         max-width: 1440px;
