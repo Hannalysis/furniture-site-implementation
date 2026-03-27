@@ -1,5 +1,4 @@
 .ourProducts {
-    height: 1084px;
     display: flex;
     flex-direction: column;
 }
@@ -14,4 +13,23 @@
 
 .ourProductsCardContainer {
     margin: 32px 0;
+}
+
+@media (min-width: 1024px) {
+
+    .ourProductsCardContainer {
+        grid-template-columns: repeat(9, minmax(75px, 1fr));
+    }
+}
+
+@media (min-width: 1240px) {
+    
+    .ourProducts {
+        height: 1084px;
+    }
+
+    .ourProductsCardContainer {
+        grid-template-columns: var(--grid-12-col);
+    }
+
 }
