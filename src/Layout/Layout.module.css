@@ -1,7 +1,6 @@
 .grid {
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {
@@ -14,8 +13,7 @@
 @media (min-width: 1024px) {
     /* General layout */
     .grid {
-        /* 75px is the design column width aka 1440px - margins - gaps */
-        grid-template-columns: repeat(12, minmax(75px, 1fr));
+        grid-template-columns: var(--grid-12-col);
         gap: 30px;
     }
 }
