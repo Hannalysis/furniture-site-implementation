@@ -1,6 +1,7 @@
 .ourProducts {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .ourProducts h2 {
@@ -17,6 +18,10 @@
 
 @media (min-width: 1024px) {
 
+    /* .ourProducts {
+        align-items: center;
+    } */
+
     .ourProductsCardContainer {
         grid-template-columns: repeat(9, minmax(75px, 1fr));
     }
@@ -30,6 +35,14 @@
 
     .ourProductsCardContainer {
         grid-template-columns: var(--grid-12-col);
+    }
+
+}
+
+@media (min-width: 1440px) {
+    
+    .ourProducts {
+        align-items: normal;
     }
 
 }
