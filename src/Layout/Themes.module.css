@@ -29,6 +29,7 @@
   /* --- Grid --- */
   /* 75px is the design column width aka 1440px - margins - gaps */
   --grid-12-col: repeat(12, minmax(75px, 1fr));
+  --grid-9-col: repeat(9, minmax(75px, 1fr));
 
   /* Default theme */
 

@@ -19,7 +19,7 @@
 @media (min-width: 1024px) {
 
     .ourProductsCardContainer {
-        grid-template-columns: repeat(9, minmax(75px, 1fr));
+        grid-template-columns: var(--grid-9-col);
     }
 }
 
