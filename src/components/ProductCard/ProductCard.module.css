@@ -65,23 +65,3 @@
 .productSticker.new {
     background-color: var(--label-teal);
 }
-
-@media (min-width: 1024px) {
-
-    /* .productCard img {
-        height: 301px;
-        max-width: 17em;
-    } */
-}
-
-@media (min-width: 1240px) {
-
-    .productCard {
-        grid-column: span 3; 
-    }
-
-    /* .productCard img {
-        height: 301px;
-        max-width: 285px;
-    } */
-}
