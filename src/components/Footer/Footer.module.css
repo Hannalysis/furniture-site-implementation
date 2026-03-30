@@ -3,13 +3,18 @@
     justify-items: center;
     align-content: center;
     width: 100%;
-    height: 505px;
     border-top: 1px solid var(--layout-subtext-colour);
 }
 
 .footerNav {
     grid-column: 1 / -1;
+    margin-bottom: 56px;
+    /* height: 312px; */
 }
+
+/* .footerContainer {
+    height: 414px;
+} */
 
 .footerFurniro {
   padding-bottom: 50px;
@@ -78,8 +83,57 @@ input::placeholder, .subButton {
 
 @media (min-width: 1024px) {
 
+    .footer {
+        padding: 4% 0%;
+    }
+
+    .footerContainer {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .footerNav {
+         grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
     .footerFurniroInfo {
-        grid-column: 2 / 5;
+        grid-column: 2 / span 4;
+    }
+    
+    .footerLinks {
+        grid-column: span 3;
+    }
+        
+    .footerHelp {
+        grid-column: span 3;
+    }
+    
+    .footerNewsletter {
+        grid-column: 6 / span 3;
+    }
+
+    .footerSubscribe {
+        grid-column: span 3;
+    }
+    
+    .footerCopyright {
+        grid-column: 1 / 13;
+    }
+
+    .footerCopyright p {
+        /* To match Furniro in 2nd column without moving the border (column width at res + gap) */
+        padding-left: calc(63.8158px + 30px);
+    }
+}
+
+@media (min-width: 1240px) {
+
+    .footer {
+        height: 505px;
+        padding: 0%;
+    }
+
+    .footerFurniroInfo {
+        grid-column: 1 / 5;
     }
     
     .footerLinks {
@@ -99,11 +153,19 @@ input::placeholder, .subButton {
     }
     
     .footerCopyright {
-    grid-column: 2 / -1;
+        grid-column: 1 / 13;
+    }
+
+    .footerCopyright p {
+        padding-left: 0px;
     }
 }
 
 @media (min-width: 1440px) {
+
+    .footerContainer {
+        grid-template-columns: repeat(12, minmax(75px, 1fr));
+    }
 
     .footerFurniroInfo {
         grid-column: 1 / 4;
@@ -126,6 +188,6 @@ input::placeholder, .subButton {
     }
     
     .footerCopyright {
-    grid-column: 1 / -1;
+        grid-column: 1 / -1;
     }
 }
