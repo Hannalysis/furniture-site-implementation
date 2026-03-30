@@ -1,6 +1,4 @@
-// import { Typography } from "../../components/@ui/Typography/Typography";
-
-// import { Banner } from "./Banner/Banner"
+import { Banner } from "./Banner/Banner"
 import { BrowseTheRange } from "./BrowseTheRange/BrowseTheRange";
 import { OurProducts } from "./OurProducts/OurProducts";
 // import { Inspirations } from "./Inspirations/Inspirations"
@@ -8,7 +6,7 @@ import { OurProducts } from "./OurProducts/OurProducts";
 
 export const Home = () => (
   <>
-    {/* <Banner /> */}
+    <Banner />
     <BrowseTheRange />
     <OurProducts />
     {/* <Inspirations />
