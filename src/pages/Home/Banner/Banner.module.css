@@ -42,7 +42,7 @@
     .bannerDiscoverBox {
         height: calc(443px - 50px);
         width: clamp(493px, 45vw, 643px);
-        padding: 66px 41px 33px;
+        padding: 33px 41px 33px;
     }
 
     .bannerBuyButton {
@@ -55,6 +55,7 @@
 
     .bannerDiscoverBox {
         height: 443px;
+        padding-top: 66px;
     }
 }
 
