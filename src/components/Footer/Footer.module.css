@@ -9,12 +9,7 @@
 .footerNav {
     grid-column: 1 / -1;
     margin-bottom: 56px;
-    /* height: 312px; */
 }
-
-/* .footerContainer {
-    height: 414px;
-} */
 
 .footerFurniro {
   padding-bottom: 50px;

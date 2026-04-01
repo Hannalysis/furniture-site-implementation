@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react"
 
 
-
-
 export const Footer = () => {
   const [email, setEmail] = useState("");
 
