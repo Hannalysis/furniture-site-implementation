@@ -1,11 +1,10 @@
 <h1 align = "center">Furniture Site Implementation</h1>
 
-<p align = "center"><b>Overview</b>: This project is a Front-End Implementation of a Community Figma Design created by <i>aashifasheikh12</i>.</p>
+<p align = "center"><b>Overview</b>: This project is a Front-End Design System Implementation, of a Community Figma Design created by <i>aashifasheikh12</i>.</p>
 
-<!-- <p align = "center">
-  <img src= "/readme-images/house-icon.jpg"             alt="house-icon-outline"
-  width="25%"/>
-</p> -->
+<div align = "center">
+  <img src= "docs/readme-assets/furniro-banner.jpg" alt="Landing page banner showing furniro hero section"/>
+</div>
 
 <br>
 <p align = "center">ℹ Note: Current scope is restricted to the Landing Page.</p>
@@ -14,13 +13,22 @@
 
 <h2>Table of Contents</h2>
 
-
+- [Deployment](#deployment)
 - [Installation](#installation)
+- [Goals](#goals)
 - [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Components](#components)
 - [Process](#process)
+- [Milestones](#milestones)
 - [Author](#author)
 
 ------------
+
+# Deployment 
+
+For a live demonstration, please feel free to view here: <br/>
+https://furniture-site-implementation.vercel.app/
 
 # Installation
 
@@ -28,6 +36,12 @@
 npm install
 npm run dev
 ```
+
+# Goals
+<i>Initially, this project was going to become a straightforward figma-to-code visual translation.
+
+After setting my eyes on this public community figma design, which actually encompassed an entire 8 pages and a sidebar; it made sense to implement a scalable front-end system, with reusable components and design tokens. This would make it easier to create all the pages on this selfsame project.
+</i>
 
 # Tech Stack
 
@@ -37,6 +51,77 @@ npm run dev
   </a>
     <h4><u>Packages:</u><br/><span style = "font-weight:lighter">classNames, react-router-dom, react-icons</span></h4>
 </p>
+
+# Architecture
+
+This project consists of a Layout system, Typography system, Design Token variables associated to a main theme, a react-routing system, reusable grid & container classes, and reusable components.  
+
+Styling is handled in modular css files and using hsl colouring only. Despite only having design files for desktop (therefore implementing 1440px view first), I'm utilising a mobile first mindset by allocating as much of the styling that requires a desktop width to be already handled by relevant media queries. Therefore when MS1 is complete, mobile styling properties will not be using media queries by default.
+
+High level app flow diagram:
+
+<div align= "center">
+  <img src= "docs/readme-assets/app-basic-flowchart-diagram.jpg" 
+       alt="Basic application flow diagram"
+       width=75% />
+</div>
+
+<br/>
+
+<h3> Layout </h3>
+
+- Layout.tsx
+- Layout.module.css
+- Themes.module.css
+
+
+Folder & file structure: 
+
+```bash
+src/
+  assets/
+  components/
+    @ui
+    Carousel
+    Footer
+    Header
+    ProductCard
+  data/
+  Layout/
+    Layout.module.css
+    Layout.tsx
+    Themes.module.css
+  pages/
+    Home/
+      Banner/
+      BrowseTheRange/
+      HashtagShare/
+      Inspirations/
+      OurProducts/
+      Home.tsx
+  App.tsx
+  index.css
+  main.tsx
+```
+
+
+Layout decisions (Grid/Flex, spacing wrappers, etc.)
+Design tokens / theme variables
+
+# Components
+
+<div align="center">
+
+PH table!
+
+|  | Purpose                          | Where Used                       |
+| --------- | -------------------------------- | -------------------------------- |
+| Card      | Reusable content container       | Features, Pricing, Blog sections |
+| Button    | Primary / secondary actions      | CTA, forms                       |
+| Grid      | Layout system for responsiveness | All pages                        |
+
+</div>
+
 
 # Process
 
@@ -95,5 +180,5 @@ The sticker content text is also more centred for the sale sticker type than the
 
 # Author
 
-Front-end Implementation by Hannahry
+Front-end Design System Implementation by Hannahry
 <i></br><b>aka: </b>@Hannalysis</i>
