@@ -133,7 +133,7 @@ input::placeholder, .subButton {
     }
 
     .footerFurniroInfo {
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
     }
     
     .footerLinks {
