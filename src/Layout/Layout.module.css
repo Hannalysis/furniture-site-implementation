@@ -1,14 +1,10 @@
 .grid {
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: 1fr;
-}
-
-.contentContainer, .wideContainer {
-    width: 100%;
 }
 
 @media (min-width: 768px) {
+    
   .grid {
     grid-template-columns: repeat(6, 1fr);
     gap: 15px;
@@ -18,10 +14,10 @@
 @media (min-width: 1024px) {
     /* General layout */
     .grid {
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: var(--grid-12-col);
         gap: 30px;
     }
-    }
+}
 
 @media (min-width: 1240px) {
 
@@ -32,11 +28,6 @@
 }
 
 @media (min-width: 1440px) {
-
-    .contentContainer {
-        max-width: 1240px;
-        margin: 0 auto;
-    }
 
     .wideContainer {
         max-width: 1440px;

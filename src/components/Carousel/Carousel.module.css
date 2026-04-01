@@ -15,7 +15,7 @@
 }
 
 .carouselItem {
-  flex: 0 0 70%; /* for peek effect */
+  flex: 0 0 70%;
   margin-right: 10px;
 }
 

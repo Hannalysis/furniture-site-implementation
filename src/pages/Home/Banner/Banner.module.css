@@ -1,6 +1,12 @@
 .banner {
-    position: relative;
     --banner-discover-bg-colour: hsl(33, 100%, 95%);
+
+    position: relative;
+    height: auto;
+}
+
+.banner img {
+    width: 100%;
 }
 
 .bannerDiscoverBox {
@@ -33,6 +39,28 @@
 
 @media (min-width: 1024px) {
 
+    .bannerDiscoverBox {
+        height: calc(443px - 50px);
+        width: clamp(493px, 45vw, 643px);
+        padding: 33px 41px 33px;
+    }
+
+    .bannerBuyButton {
+        width: 222px;
+        height: 74px;
+    }
+}
+
+@media (min-width: 1240px) {
+
+    .bannerDiscoverBox {
+        height: 443px;
+        padding-top: 66px;
+    }
+}
+
+@media (min-width: 1400px) {
+
     .banner {
         height: 717px;
     }
@@ -40,11 +68,5 @@
     .bannerDiscoverBox {
         width: 643px;
         height: 443px;
-        padding: 66px 41px 33px;
-    }
-
-    .bannerBuyButton {
-        width: 222px;
-        height: 74px;
     }
 }

@@ -1,7 +1,7 @@
 .browseTheRange {
     --btr-subheader-color: hsl(0, 0%, 40%);
 
-    height: 685px;
+    height: clamp(450px, 55vw, 635px);
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +33,23 @@
 }
 
 .btrRoomImage {
-    height: 480px;
-    width: 381px;
     border-radius: 10px;
+    width: clamp(200px, 28vw, 381px);
+    height: clamp(250px, 35vw, 480px);
+}
+
+
+@media (min-width: 1240px) {
+    
+    .browseTheRange {
+        height: clamp(635px, 50vw, 685px);
+    }
+
+}
+
+@media (min-width: 1400px) {
+    
+    .browseTheRange {
+        height: 685px; 
+    }
 }

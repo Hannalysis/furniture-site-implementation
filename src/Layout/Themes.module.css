@@ -10,7 +10,6 @@
   --font-size-furniro: 34px;
 
   /* --- Colouring --- */
-
   --layout-subtext-colour: hsl(0, 0%, 63%);
 
   --main-text-colour: hsl(0, 0%, 20%);
@@ -26,6 +25,11 @@
 
   --label-peach: hsl(0, 73%, 68%);
   --label-teal: hsl(171, 62%, 47%);
+
+  /* --- Grid --- */
+  /* 75px is the design column width aka 1440px - margins - gaps */
+  --grid-12-col: repeat(12, minmax(75px, 1fr));
+  --grid-9-col: repeat(9, minmax(75px, 1fr));
 
   /* Default theme */
 
