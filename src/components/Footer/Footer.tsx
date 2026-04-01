@@ -104,7 +104,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className={classes.footerCopyright}>
-        <Typography variant="body1">2023 furniro. All rights reverved</Typography>
+        <Typography variant="body1">2023 furniro. Design system demo</Typography>
       </div>
     </div>
     </footer>
