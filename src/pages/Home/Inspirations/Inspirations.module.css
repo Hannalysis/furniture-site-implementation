@@ -23,6 +23,7 @@
 }
 
 .inspirationsHeaderContainer h2 {
+    margin-top: 1%;
     margin-bottom: 7px;
 }
 
@@ -139,6 +140,10 @@
     .inspirationsHeaderContainer {
         height: 224px;
     }
+
+    .inspirationsHeaderContainer h2 {
+        margin-top: 0;
+    } 
 
     .inspirationsHeaderContainer h6 {
         color: var(--header-inline-colour);
