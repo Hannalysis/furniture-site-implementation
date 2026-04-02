@@ -42,6 +42,7 @@
     border: none;
     align-self: center;
     margin-top: auto;
+    cursor: pointer;
 }
 
 .inspirationsRoomCardContainer, .inspirationsCarousel {
