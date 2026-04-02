@@ -58,7 +58,7 @@ This project consists of a Layout system, Typography system, Design Token variab
 
 Styling is handled in modular css files and using hsl colouring only. Despite only having design files for desktop (therefore implementing 1440px view first), I'm utilising a mobile first mindset by allocating as much of the styling that requires a desktop width to be already handled by relevant media queries. Therefore when MS1 is complete, mobile styling properties will not be using media queries by default.
 
-High level app flow diagram:
+<h3>High level app flow diagram: </h3>
 
 <div align= "center">
   <img src= "docs/readme-assets/app-basic-flowchart-diagram.jpg" 
@@ -70,39 +70,11 @@ High level app flow diagram:
 
 <h3> Layout </h3>
 
-- Layout.tsx
-- Layout.module.css
-- Themes.module.css
+- <i>Layout.tsx</i> - In addition to where the application layout is defined & the Outlet renders its child routes, it's also where the theme class is applied.
+- <i>Layout.module.css</i> - Where the initial properties of the `grid`, `contentContainer` and `wideContainer` classes are established.
+- <i>Themes.module.css</i> - Where all the design variable tokens for the default theme class reside.
 
-
-Folder & file structure: 
-
-```bash
-src/
-  assets/
-  components/
-    @ui
-    Carousel
-    Footer
-    Header
-    ProductCard
-  data/
-  Layout/
-    Layout.module.css
-    Layout.tsx
-    Themes.module.css
-  pages/
-    Home/
-      Banner/
-      BrowseTheRange/
-      HashtagShare/
-      Inspirations/
-      OurProducts/
-      Home.tsx
-  App.tsx
-  index.css
-  main.tsx
-```
+Folder & file structure: <a href="./docs/readme-assets/hierarchy.md">hierarchy.md</a>
 
 
 Layout decisions (Grid/Flex, spacing wrappers, etc.)

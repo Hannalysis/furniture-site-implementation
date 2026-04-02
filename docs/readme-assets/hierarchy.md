@@ -1,0 +1,26 @@
+```bash
+src/
+  assets/
+  components/
+    @ui
+    Carousel
+    Footer
+    Header
+    ProductCard
+  data/
+  Layout/
+    Layout.module.css
+    Layout.tsx
+    Themes.module.css
+  pages/
+    Home/
+      Banner/
+      BrowseTheRange/
+      HashtagShare/
+      Inspirations/
+      OurProducts/
+      Home.tsx
+  App.tsx
+  index.css
+  main.tsx
+```
