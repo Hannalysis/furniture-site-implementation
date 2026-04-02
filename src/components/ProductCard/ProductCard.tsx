@@ -10,15 +10,17 @@ type Props = {
 export function ProductCard({ product }: Props) {
   return (
     <div className={classes.productCard}>
-      {product.sticker && <div className={`
-      ${classes.productSticker} ${
-        product.sticker.type === "sale"
-        ? classes.sale
-        : product.sticker.type === "new"
-        ? classes.new
-        : ""
-      }`}>
-      <Typography variant="heading6">{product.sticker.label}</Typography></div>}
+      {product.sticker && 
+        <div className={`
+          ${classes.productSticker} ${
+            product.sticker.type === "sale"
+            ? classes.sale
+            : product.sticker.type === "new"
+            ? classes.new
+            : ""
+          }`}>
+          <Typography variant="heading6">{product.sticker.label}</Typography>
+        </div>}
       <img src={product.image} alt={product.title} />
       <div className={classes.productContentContainer}>
         <Typography variant="heading4">{product.title}</Typography>
