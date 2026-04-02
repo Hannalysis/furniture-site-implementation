@@ -56,7 +56,7 @@ After setting my eyes on this public community figma design, which actually enco
 
 # Architecture
 
-This project consists of a Layout system, Typography system, Design Token variables associated to a main theme, a react-routing system, reusable grid & container classes, and reusable components.  
+This project consists of a Layout system, Typography system, Design Token variables associated with a main 'default' theme, a react-routing system, reusable grid & container classes, and reusable components.  
 
 Styling is handled in modular css files and using hsl colouring only. Despite only having design files for desktop (therefore implementing 1440px view first), I'm utilising a mobile first mindset by allocating as much of the styling that requires a desktop width to be already handled by relevant media queries. Therefore when MS1 is complete, mobile styling properties will not be using media queries by default.
 
@@ -100,7 +100,7 @@ Figma links can also be provided upon request.
 
 # Process
 
-This is written per pull request. As it's quite lenghty, I have divided this section into smaller files accessible by links below:
+This is written per pull request. As it's quite lengthy, I have divided this section into smaller files accessible by links below:
 
 <b>Preparation & Initialisation:</b><br/>
 Project initialisation to systems implementation: <a href="./docs/readme-assets/process-init-pr8.md">Init-#PR8</a>
