@@ -19,8 +19,10 @@
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
 - [Components](#components)
+- [Figma Reference](#figma-reference)
 - [Process](#process)
 - [Milestones](#milestones)
+- [Future Milestones](#future-milestones)
 - [Author](#author)
 
 ------------
@@ -92,9 +94,15 @@ Folder & file structure: <a href="./docs/readme-assets/hierarchy.md">hierarchy.m
 
 <br/>
 
+# Figma Reference 
+
+<b>Home</b>: <a href="./docs/readme-assets/figma-screenshots/figma-home-full.jpg">Full</a> | <a href="./docs/readme-assets/figma-screenshots/figma-home-layout-grid.jpg">Layout Grid</a> | Close ups: <a href="./docs/readme-assets/figma-screenshots/figma-home-pt1.jpg">Pt1</a> | <a href="./docs/readme-assets/figma-screenshots/figma-home-pt2.jpg">Pt2</a> | <a href="./docs/readme-assets/figma-screenshots/figma-home-pt3.jpg">Pt3</a>
+
+Figma links can also be provided upon request.
+
 # Process
 
-This is written per Pull Request. As it's quite lenghty, I have divided this section into smaller files accessible by links below:
+This is written per pull request. As it's quite lenghty, I have divided this section into smaller files accessible by links below:
 
 <b>Preparation & Initialisation:</b><br/>
 Project initialisation to systems implementation: <a href="./docs/readme-assets/process-init-pr8.md">Init-#PR8</a>
@@ -107,6 +115,32 @@ Making the site responsive for all desktop sizes: <a href="./docs/readme-assets/
 
 # Milestones
 
+<h3><b>MVP</b> - Completed: 2026/03/26</h3>
+
+- Front-End Architecture Implemented: Layout System, Typography System, Page Routing 
+- Default theme implemented with associated design token variables
+- Layout (Header and Footer) fully styled
+- All Home sections visually styled for the original 1440px Figma design, using media queries where appropriate
+- Carousel & ProductCard components that dynamically populate based on the accompanying data file
+
+<h3><b>MS1</b> - In Progress</h3>
+
+- [x] Better responsiveness on smaller desktop widths: Using appropriate breakpoints, including adjusting grid spans and pushing other flexed content where necessary
+- [ ] Add responsiveness for all mobile devices
+- [ ] Add placeholder 'coming soon' sections for linking pages that are yet to be implemented
+- [ ] Add the alternative ProductCard view when clicking on the card
+
+<br/>
+
+# Future Milestones
+
+<h3><b>MS2</b></h3>
+
+- Implement another page from the figma design
+- Ensure this page is fully responsive for all devices
+- Implement an additional theme (so default is not the only theme class)
+
+<br/>
 
 # Author
 
