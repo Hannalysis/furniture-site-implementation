@@ -77,7 +77,6 @@ Folder & file structure: <a href="./docs/readme-assets/hierarchy.md">hierarchy.m
 - <i>Layout.module.css</i> - Where the initial properties of the `grid`, `contentContainer` and `wideContainer` classes are established.
 - <i>Themes.module.css</i> - Where all the design variable tokens for the default theme class reside.
 
-<br/>
 
 # Components
 
@@ -92,7 +91,6 @@ Folder & file structure: <a href="./docs/readme-assets/hierarchy.md">hierarchy.m
 
 </div>
 
-<br/>
 
 # Figma Reference 
 
@@ -130,7 +128,6 @@ Making the site responsive for all desktop sizes: <a href="./docs/readme-assets/
 - [ ] Add placeholder 'coming soon' sections for linking pages that are yet to be implemented
 - [ ] Add the alternative ProductCard view when clicking on the card
 
-<br/>
 
 # Future Milestones
 
