@@ -1,5 +1,4 @@
 .header {
-    justify-items: center;
     align-content: center;
     width: 100%;
     height: 100px;
@@ -7,11 +6,18 @@
 
 .headerNav {
     background-color: var(--bg);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
 }
 
 .furniroIcon {
     height: 41px;
     width: 50px;
+}
+
+.furniro {
+    margin-left: 3em;
+    order: 1;
 }
 
 .furniro a {
@@ -25,15 +31,30 @@
     color: inherit;
 }
 
+span {
+    display: none;
+}
+
 .headerPageNav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    order: 3;
+    grid-column: span 2;
 }
 
 .headerPageNav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 20px;
+}
+
+.headerActions {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .headerActions button {
@@ -66,6 +87,55 @@
     stroke-width: 1;
 }
 
+@media (min-width: 480px) {
+
+    span {
+        /* Brand text displays from here */
+        display: inline-block;
+    }
+
+    .furniro {
+        grid-column: 1 / span 3;
+    }
+
+    .headerNav {
+        /* Removing the bespoke two column grid for smaller devices */
+        grid-template-columns: none;
+    }
+
+    .headerPageNav {
+        grid-column: 1 / span 2;
+        justify-content: center;
+        order: 2;
+    }
+
+    .headerActions {
+        grid-column: 3 / span 1;
+        justify-content: space-evenly;
+        order: 3;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .furniro {
+        grid-column: 1 / span 2;
+    }
+
+    .headerPageNav {
+        grid-column: 3 / span 2;
+        flex-direction: column;
+    }
+
+    .headerActions {
+        grid-column: 5 / span 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
 @media (min-width: 1024px) {
     
     .headerNav {
@@ -74,6 +144,7 @@
 
     .furniro {
         grid-column: 2 / 3;
+        margin-left: 0;
     }
 
     .furniro a {
@@ -83,6 +154,8 @@
     .headerPageNav {
         grid-column: 3 / 7;
         padding: 0 2.55em;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     .headerPageNav ul {
