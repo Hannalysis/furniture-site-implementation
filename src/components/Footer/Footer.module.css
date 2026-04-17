@@ -191,11 +191,6 @@ input::placeholder, .subButton {
     .footerCopyright {
         grid-column: 2 / 12;
     }
-
-    .footerCopyright p {
-        /* To match Furniro in 2nd column without moving the border (column width at res + gap) */
-        /* padding-left: calc(63.8158px + 30px); */
-    }
 }
 
 @media (min-width: 1240px) {
