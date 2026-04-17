@@ -7,7 +7,6 @@
 .headerNav {
     background-color: var(--bg);
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 5px;
 }
 
 .furniroIcon {
@@ -41,6 +40,8 @@ span {
     justify-content: center;
     order: 3;
     grid-column: span 2;
+    /* To give top row a little breathing room, mimicking the gap without overriding it */
+    margin-top: 10px;
 }
 
 .headerPageNav ul {
@@ -107,6 +108,7 @@ span {
         grid-column: 1 / span 2;
         justify-content: center;
         order: 2;
+        margin-top: 0;
     }
 
     .headerActions {
