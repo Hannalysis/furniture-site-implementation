@@ -11,6 +11,7 @@
 
   /* --- Colouring --- */
   --layout-subtext-colour: hsl(0, 0%, 63%);
+  --layout-subtext-colour-faded: hsla(0, 0%, 63%, 33%);
 
   --main-text-colour: hsl(0, 0%, 20%);
   --header-inline-colour: hsl(0, 0%, 38%); /* Note: Except 'Browse The Range' is 40 */
