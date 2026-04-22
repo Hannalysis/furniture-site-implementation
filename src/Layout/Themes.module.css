@@ -35,8 +35,10 @@
   /* Default theme */
 
   /* H1 */
-  --font-size-h1: 52px;
-  --line-height-h1: 65px;
+  /* font-size-h1: 52px */
+   --font-size-h1: clamp(2rem, 5vw, 3.25rem);
+  /* line-height-h1: 65px (65 / 52 = 1.25) */
+  --line-height-h1: 1.25;
   --letter-spacing-h1: 0;
 
   /* H2 */
@@ -61,6 +63,8 @@
   --letter-spacing-overline: 3px;
 
   /* Subtitle */
-  --font-size-subtitle: 18px;
-  --line-height-subtitle: 24px;
+  /* font-size-subtitle: 18px */
+  --font-size-subtitle: clamp(1rem, 2vw, 1.125rem);
+  /* line-height-subtitle: 24px */
+  --line-height-subtitle: 1.5rem;
 }
