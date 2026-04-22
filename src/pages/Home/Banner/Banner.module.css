@@ -86,11 +86,6 @@
         display: block;
     }
 
-    .bannerBuyButton {
-        width: 222px;
-        height: 74px;
-    }
-
 }
 
 @media (min-width: 1024px) {
@@ -100,11 +95,6 @@
         width: clamp(493px, 45vw, 643px);
         padding: 33px 41px 33px;
         transform: translate(0%, -50%);
-    }
-
-    .bannerBuyButton {
-        width: 222px;
-        height: 74px;
     }
 }
 
