@@ -1,4 +1,4 @@
-// import { Banner } from "./Banner/Banner"
+import { Banner } from "./Banner/Banner"
 // import { BrowseTheRange } from "./BrowseTheRange/BrowseTheRange";
 // import { OurProducts } from "./OurProducts/OurProducts";
 // import { Inspirations } from "./Inspirations/Inspirations"
@@ -6,7 +6,7 @@
 
 export const Home = () => (
   <>
-    {/* <Banner /> */}
+    <Banner />
     {/* <BrowseTheRange /> */}
     {/* <OurProducts /> */}
     {/* <Inspirations /> */}

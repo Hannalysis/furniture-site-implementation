@@ -14,17 +14,27 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
     background-color: var(--banner-discover-bg-colour);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    width: 90%;
+    padding: 3px 11px 3px;
 }
 
 .bannerDiscoverBox h1 {
     color: var(--accent-gold);
     margin-top: 4px;
     margin-bottom: 17px;
+}
+
+.bannerDiscoverBox p {
+        display: none;
+}
+
+.bannerDiscoverBox span {
+        display: none;
 }
 
 .bannerBuyButton {
@@ -35,6 +45,52 @@
     font-size: var(--default-font-size);
     font-weight: var(--font-weight-bold);
     margin-top: auto;
+    width: calc(222px / 2);
+    height: calc(74px / 2);
+}
+
+
+@media (min-width: 480px) {
+
+    .bannerDiscoverBox {
+        transform: translate(-10%, -50%);
+        padding: 13px 21px 13px;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 620px) {
+
+    .bannerDiscoverBox span {
+        display: block;
+    }
+
+    .bannerBuyButton {
+        width: 222px;
+        height: 74px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .bannerDiscoverBox {
+        padding: 23px 31px 23px;
+    }
+
+    .bannerDiscoverBox p {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .bannerDiscoverBox span {
+        display: block;
+    }
+
+    .bannerBuyButton {
+        width: 222px;
+        height: 74px;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -43,6 +99,7 @@
         height: calc(443px - 50px);
         width: clamp(493px, 45vw, 643px);
         padding: 33px 41px 33px;
+        transform: translate(0%, -50%);
     }
 
     .bannerBuyButton {
