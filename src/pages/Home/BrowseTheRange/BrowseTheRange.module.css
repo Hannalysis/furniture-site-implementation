@@ -1,13 +1,14 @@
 .browseTheRange {
     --btr-subheader-color: hsl(0, 0%, 40%);
 
-    height: clamp(450px, 55vw, 635px);
     display: flex;
     flex-direction: column;
 }
 
 .browseTheRange h3 {
     align-self: center;
+    margin: 0 1rem;
+    text-align: center;
 }
 
 .btrSubHeader {
@@ -15,16 +16,22 @@
     font-size: var(--font-size-h5);
     font-weight: var(--font-weight-regular);
     align-self: center;
+    margin: 0 2rem;
+    text-align: center;
 }
 
 .btrContentContainer {
     display: flex;
     justify-content: space-evenly;
-    margin-top: auto;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-top: 2rem;
 }
 
 .btrRoomContainer {
     justify-items: center;
+    border-top: 1px solid var(--layout-subtext-colour-faded);
+    padding-top: 1rem;
 }
 
 .btrRoomContainer h4 {
@@ -38,11 +45,40 @@
     height: clamp(250px, 35vw, 480px);
 }
 
+@media (min-width: 401px) {
+
+    .btrRoomContainer {
+        padding-top: 0;
+        border-top: none;
+    }
+
+}
+
+@media (min-width: 480px) {
+
+
+}
+
+@media (min-width: 768px) {
+
+    .browseTheRange {
+        height: clamp(450px, 55vw, 635px);
+    }
+
+    .btrContentContainer {
+        margin-top: 2.75rem;
+    }  
+}
+
 
 @media (min-width: 1240px) {
     
     .browseTheRange {
         height: clamp(635px, 50vw, 685px);
+    }
+
+    .btrContentContainer {
+        margin-top: 3.875rem;
     }
 
 }

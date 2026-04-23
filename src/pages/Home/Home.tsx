@@ -1,5 +1,5 @@
 import { Banner } from "./Banner/Banner"
-// import { BrowseTheRange } from "./BrowseTheRange/BrowseTheRange";
+import { BrowseTheRange } from "./BrowseTheRange/BrowseTheRange";
 // import { OurProducts } from "./OurProducts/OurProducts";
 // import { Inspirations } from "./Inspirations/Inspirations"
 // import { HashtagShare } from "./HashtagShare/HashtagShare";
@@ -7,7 +7,7 @@ import { Banner } from "./Banner/Banner"
 export const Home = () => (
   <>
     <Banner />
-    {/* <BrowseTheRange /> */}
+    <BrowseTheRange />
     {/* <OurProducts /> */}
     {/* <Inspirations /> */}
     {/* <HashtagShare /> */}
