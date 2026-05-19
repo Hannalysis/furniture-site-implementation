@@ -13,3 +13,7 @@ I also created to create an additional border-top for all footer sub sections fo
 Similar to my decision making on the Header, as the device width decreases, it was too difficult to keep all the entire Discover box contents (especially with the subtitle/overline already going down to 16px font-size). So, the subtitle (description text) was the first to hide under 768px, and the overline (new arrival) at 480px and lower. Additionally, the Discover box becomes centred and takes up 90% of the space on the smallest of devices, to even allow the title and button to fit appropriately.
 
 - #PR17 Pt4: Browse the Range. Much like the footer, once the width is small enough to only display a single column of the rooms, it's easy to not be able to reference which text is related to which image, so I added the same light border that is present on the footer for both readability, and keeping the design consistent throughout.
+
+- #PR17 Pt5: Our Products was mostly already mobile responsive due to the grid layout, it just needed an additional gap placed on the smallest of devices so each card was not touching one another. 
+
+- #PR17 Pt6: For the Inspirations section, I needed to make the images more responsive, and in turn, add a clamp to the position of the card content box (Inner Peace), in order to be fully mobile responsive at the smallest widths. I also added a few minor margins for the subheader and the carousel indicators to stop them from hugging the left edge on smaller devices.
