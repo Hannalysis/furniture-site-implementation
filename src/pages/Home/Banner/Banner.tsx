@@ -21,7 +21,9 @@ export const Banner = () => (
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
                         luctus nec ullamcorper mattis.
                     </Typography>
-                    <button className={classes.bannerBuyButton}>BUY NOW</button>
+                    <div className={classes.buttonContainer}>
+                        <button className={classes.bannerBuyButton}>BUY NOW</button>
+                    </div>
             </div>
     </section>
 );
