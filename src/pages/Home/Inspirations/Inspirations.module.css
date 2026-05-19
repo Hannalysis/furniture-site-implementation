@@ -13,6 +13,7 @@
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .inspirationsHeaderContainer {
@@ -20,6 +21,8 @@
     flex-direction: column;
     flex: 1 1 100%;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .inspirationsHeaderContainer h2 {
@@ -50,7 +53,6 @@
 }
 
 .inspirationsRoomCardContainer {
-    margin-left: 24px;
     position: relative;
 }
 
@@ -58,7 +60,7 @@
     position: absolute;
     display: flex;
     align-items: flex-end;
-    bottom: 4%;
+    bottom: clamp(20%, calc(30% - 15vw), 25%);
     left: 6%;
 }
 
@@ -73,8 +75,8 @@
 }
 
 .inspirationsImg {
-    height: 582px;
-    width: 404px;
+    height: auto;
+    width: 100%;
 }
 
 .inspirationsRoomCardLabel {
@@ -119,19 +121,43 @@
 }
 
 .inspirationsCarousel {
-    overflow: hidden;
-    margin-right: -100px;
+    overflow: hidden;   
+}
+
+@media (min-width: 480px) {
+
+    .inspirationsRoomCardContainer {
+        margin-left: 24px;
+    }
+
+    .inspirationsRoomCardContentContainer {
+        bottom: 4%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .inspirationsImg {
+        width: 404px;
+    }
+
 }
 
 @media (min-width: 1024px) {
 
     .inspirationsHeaderContainer {
         width: 422px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .inspirationsContainer > *:nth-child(3) {
         margin-left: auto;
         margin-right: 0;
+    }
+
+            .inspirationsCarousel {
+        margin-right: -100px;
     }
 
 }
