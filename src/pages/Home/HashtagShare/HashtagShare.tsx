@@ -12,7 +12,10 @@ export const HashtagShare = () => (
         `}>
         <div className={classes.shareHeaderContainer}>
             <Typography variant="heading5">Share your setup with</Typography>
-            <Typography variant="heading2">#FurniroFurniture</Typography>
+            <Typography variant="heading2">
+                  <span className={classes.shareFurniroTextPart1}>#Furniro</span>
+                  <span className={classes.shareFurniroTextPart2}>Furniture</span>
+            </Typography>
         </div>
         <div className={classes.shareImagesContainer}>
             <div className={classes.shareImagesLeftContainer}>
