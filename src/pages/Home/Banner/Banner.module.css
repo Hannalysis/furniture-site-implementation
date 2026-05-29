@@ -96,6 +96,10 @@
         padding: 33px 41px 33px;
         transform: translate(0%, -50%);
     }
+
+    .buttonContainer {
+        margin-top: auto;
+    }
 }
 
 @media (min-width: 1240px) {
