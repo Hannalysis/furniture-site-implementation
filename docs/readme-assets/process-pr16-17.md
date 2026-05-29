@@ -17,3 +17,5 @@ Similar to my decision making on the Header, as the device width decreases, it w
 - #PR17 Pt5: Our Products was mostly already mobile responsive due to the grid layout, it just needed an additional gap placed on the smallest of devices so each card was not touching one another. 
 
 - #PR17 Pt6: For the Inspirations section, I needed to make the images more responsive, and in turn, add a clamp to the position of the card content box (Inner Peace), in order to be fully mobile responsive at the smallest widths. I also added a few minor margins for the subheader and the carousel indicators to stop them from hugging the left edge on smaller devices.
+
+- #PR17 Pt7: Finally, for the Hashtag Share section, all that was needed to make the page fully mobile responsive was to split the #FurniroFuture header into two parts; to allow the word 'Furniture' to sit on the following line, moving it from an inline to block on widths smaller than 400px. (The image behaviour within this section was already implemented before this branch, making short work of this component refactor).

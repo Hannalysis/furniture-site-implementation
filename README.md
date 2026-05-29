@@ -7,7 +7,7 @@
 </div>
 
 <br>
-<p align = "center">ℹ Note: Current scope is restricted to the Landing Page. Optimised for small desktops and above.</p>
+<p align = "center">ℹ Note: Current scope is restricted to the Landing Page. Optimised for mobile & desktop.</p>
 
 ------------
 
@@ -45,6 +45,8 @@ npm run dev
 After setting my eyes on this public community figma design, which actually encompassed an entire 8 pages and a sidebar; it made sense to implement a scalable front-end system, with reusable components and design tokens. This would make it easier to create all the pages on this selfsame project.
 </i>
 
+<br/>
+
 # Tech Stack
 
 <p align="left">
@@ -53,6 +55,8 @@ After setting my eyes on this public community figma design, which actually enco
   </a>
     <h4><u>Packages:</u><br/><span style = "font-weight:lighter">classNames, react-router-dom, react-icons</span></h4>
 </p>
+
+<br/>
 
 # Architecture
 
@@ -77,6 +81,7 @@ Folder & file structure: <a href="./docs/readme-assets/hierarchy.md">hierarchy.m
 - <i>Layout.module.css</i> - Where the initial properties of the `grid`, `contentContainer` and `wideContainer` classes are established.
 - <i>Themes.module.css</i> - Where all the design variable tokens for the default theme class reside.
 
+<br/>
 
 # Components
 
@@ -91,12 +96,15 @@ Folder & file structure: <a href="./docs/readme-assets/hierarchy.md">hierarchy.m
 
 </div>
 
+<br/>
 
 # Figma Reference 
 
 <b>Home</b>: <a href="./docs/readme-assets/figma-screenshots/figma-home-full.jpg">Full</a> | <a href="./docs/readme-assets/figma-screenshots/figma-home-layout-grid.jpg">Layout Grid</a> | Close ups: <a href="./docs/readme-assets/figma-screenshots/figma-home-pt1.jpg">Pt1</a> | <a href="./docs/readme-assets/figma-screenshots/figma-home-pt2.jpg">Pt2</a> | <a href="./docs/readme-assets/figma-screenshots/figma-home-pt3.jpg">Pt3</a>
 
 Figma links can also be provided upon request.
+
+<br/>
 
 # Process
 
@@ -109,7 +117,9 @@ Project initialisation to systems implementation: <a href="./docs/readme-assets/
 From the initial skeleton to translating the <i>Home</i> page from figma: <a href="./docs/readme-assets/process-pr9-15.md">#PR9-#PR15</a>
 
 <b>Site responsiveness:</b><br/>
-Making the site responsive for all desktop sizes: <a href="./docs/readme-assets/process-pr16.md">#PR16</a>
+Making the site responsive for all desktop & mobile sizes: <a href="./docs/readme-assets/process-pr16-17.md">#PR16-#PR17</a>
+
+<br/>
 
 # Milestones
 
@@ -121,17 +131,22 @@ Making the site responsive for all desktop sizes: <a href="./docs/readme-assets/
 - All Home sections visually styled for the original 1440px Figma design, using media queries where appropriate
 - Carousel & ProductCard components that dynamically populate based on the accompanying data file
 
-<h3><b>MS1</b> - In Progress</h3>
+<h3><b>MS1</b> - Completed: 2026/05/29</h3>
 
 - [x] Better responsiveness on smaller desktop widths: Using appropriate breakpoints, including adjusting grid spans and pushing other flexed content where necessary
-- [ ] Add responsiveness for all mobile devices
-- [ ] Add placeholder 'coming soon' sections for linking pages that are yet to be implemented
-- [ ] Add the alternative ProductCard view when clicking on the card
+- [x] Add responsiveness for all mobile devices
 
+<br/>
 
 # Future Milestones
 
 <h3><b>MS2</b></h3>
+
+- Add placeholder 'coming soon' sections for linking pages that are yet to be implemented
+- Add the alternative ProductCard view when clicking on the card
+- Improve the asthetic of the Banner section's 'Discover Our New Collection' box on smaller devices. 
+
+<h3><b>MS3</b></h3>
 
 - Implement another page from the figma design
 - Ensure this page is fully responsive for all devices
