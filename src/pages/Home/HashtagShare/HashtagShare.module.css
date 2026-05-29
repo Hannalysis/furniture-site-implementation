@@ -58,6 +58,21 @@
     display: none;
 }
 
+.shareFurniroTextPart2 {
+    display: block;
+}
+
+.shareFurniroTextPart1 {
+    display: inline;
+}
+
+@media (min-width: 400px) {
+
+    .shareFurniroTextPart1, .shareFurniroTextPart2 {
+        display: inline;
+    }
+}
+
 
 @media (min-width: 1240px) {
 
