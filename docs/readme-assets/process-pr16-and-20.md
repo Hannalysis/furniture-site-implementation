@@ -1,0 +1,39 @@
+<h2 align="center">#PR16 and #PR20: Making the site responsive for all common breakpoints</h2>
+
+- #PR16 Pt1: Due to the community figma design not having any slides for anything other than the 1440px, I made layout decisions to help make the responsive adjustments flow easier without losing the intended section deisgn in as many sections as possible.  I ensured I commented out all section components at first, and slowly introduced them as each section had apt responsive behaviour.
+
+- #PR16 Pt2: Responsive for small desktops and above. First changes I made to any serious section layouts was to the footer; I decided to push the span at the smaller desktop breakpoints to allow the columns to take up two rows. The Inspirations section was a little more challenging. For this one, I decided to split the 3 columns, with the first one taking up the first row as the header, and the second two underneath. I decided to push the carousel to the right so the peek effect feels relevant on the smaller desktops, just without the negative margins so the container is responsive. With the Share section consisting of asthetic room photos but non product specific imagery, it made sense to take out the centre image and remove a couple of outer images as the screen width decreases, along with a slight scaling adjustment. It's likely I ll have to take a different approach when factoring in mobile devices.
+
+- #PR20 Pt1: Mobile styling. Whilst working on the Header first I could see a use for a global 3 col grid, as it was fitting well with the Footer (kept it on view despite temp removing all other sections for ease of incremental implementation), and testing it against the Products section (which also utilises the grid). There is also a bespoke 2 column grid to accomodate the smallest devices layout, where I change the order so the headerActions are on the top right beside the brand, and a separate row for the navigation links. Due to the amount of headerActions, I also had to make the informed decision to show the brand icon only, which reappears at the first breakpoint.
+
+- #PR20 Pt2: For the Footer, I had to create bespoke behaviour and an additional breakpoint for the subscribe button and it's accompanying section. This was due to the fact that the "Enter your email Address" input box would overlap at the smaller device sizes, and needed more room. However, it gets plenty of room at 620px width onwards so the additional breakpoint was necessary.  
+I also created to create an additional border-top for all footer sub sections for smaller screens, to make each subsection more obvious to the user. This also utilises a faded version of the original border-top seen around the footer section.
+
+- #PR20 Pt3: The Banner. First thing I noticed when adding this component back in is that the 'BUY NOW' button is left aligned, but on the production branch it is centered. Looking at the figma it should have been left aligned from the start, so this branch will address that issue.
+Similar to my decision making on the Header, as the device width decreases, it was too difficult to keep all the entire Discover box contents (especially with the subtitle/overline already going down to 16px font-size). So, the subtitle (description text) was the first to hide under 768px, and the overline (new arrival) at 480px and lower. Additionally, the Discover box becomes centred and takes up 90% of the space on the smallest of devices, to even allow the title and button to fit appropriately.
+
+- #PR20 Pt4: Browse the Range. Much like the footer, once the width is small enough to only display a single column of the rooms, it's easy to not be able to reference which text is related to which image, so I added the same light border that is present on the footer for both readability, and keeping the design consistent throughout.
+
+- #PR20 Pt5: Our Products was mostly already mobile responsive due to the grid layout, it just needed an additional gap placed on the smallest of devices so each card was not touching one another. 
+
+- #PR20 Pt6: For the Inspirations section, I needed to make the images more responsive, and in turn, add a clamp to the position of the card content box (Inner Peace), in order to be fully mobile responsive at the smallest widths. I also added a few minor margins for the subheader and the carousel indicators to stop them from hugging the left edge on smaller devices.
+
+- #PR20 Pt7: Finally, for the Hashtag Share section, all that was needed to make the page fully mobile responsive was to split the #FurniroFuture header into two parts; to allow the word 'Furniture' to sit on the following line, moving it from an inline to block on widths smaller than 400px. (The image behaviour within this section was already implemented before this branch, making short work of this component refactor).
+
+<h3 align="center">Design Adjustment visuals</h3>
+
+The two instances where I added additional border lines to break up the content on smaller devices to make it easier to read and establish sub sections:
+
+- #PR20 Pt2:
+
+<div align = "center">
+  <img src= "./process-screenshots/pr20-furniro-mobile-view-sub-section-lines-on-footer.jpg" alt="mobile view of footer section" width=50%/>
+</div>
+
+<br/>
+
+- #PR20 Pt4:
+
+<div align = "center">
+  <img src= "./process-screenshots/pr20-furniro-mobile-view-sub-section-lines-on-btr.jpg" alt="mobile view of Browse the Range section" width=50%/>
+</div>

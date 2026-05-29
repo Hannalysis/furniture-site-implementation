@@ -117,7 +117,7 @@ Project initialisation to systems implementation: <a href="./docs/readme-assets/
 From the initial skeleton to translating the <i>Home</i> page from figma: <a href="./docs/readme-assets/process-pr9-15.md">#PR9-#PR15</a>
 
 <b>Site responsiveness:</b><br/>
-Making the site responsive for all desktop & mobile sizes: <a href="./docs/readme-assets/process-pr16-17.md">#PR16-#PR17</a>
+Making the site responsive for all desktop & mobile sizes: <a href="./docs/readme-assets/process-pr16-and-20.md">#PR16-and-#PR20</a>
 
 <br/>
 
