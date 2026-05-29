@@ -7,7 +7,7 @@
 </div>
 
 <br>
-<p align = "center">ℹ Note: Current scope is restricted to the Landing Page. Optimised for mobile & desktop.</p>
+<p align = "center">ℹ Note: Current scope is restricted to the Landing Page. <br/> Optimised for mobile & desktop (<i>width: 320px & up</i>)</p>
 
 ------------
 
